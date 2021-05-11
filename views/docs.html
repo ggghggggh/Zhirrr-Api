@@ -1,836 +1,554 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
- 
- <meta name="description" content="Rest APIs - Yuda Xwer">
- <meta name="robots" content="all,index,follow"><meta name="googlebot" content="all,index,follow"><meta name="allow-search" content="yes"><meta name="audience" content="all"><meta name="copyright" content="? 2020 Tools Online"><meta name="creator" content="xrxaxm"><meta http-equiv="Reply-to" content="index">
- <link rel="base" href="home"/>
- <link rel="canonical" href="/docs#"/>
- <link href='https://i.ibb.co/NFDbMyv/yuda.jpg' rel='icon' type='image/x-icon'/>
- <link rel="shortcut icon" href="https://i.ibb.co/NFDbMyv/yuda.jpg" />
-  <title>Homepage APIs - Yuda</title>
-  
-  <style>
-  :-webkit-full-screen {
-  
-  }
-  /* IE11 */
-  :-ms-fullscreen {
-  background-color: rbutton
-  :fullscreen {
-  
-  }
-  </style>
-  <script>
-  
-  var elem = document.documentElement;
-  function openFullscreen() {
-  if (elem.requestFullscreen) {
-  elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-  elem.webkitRequestFullscreen();
-  } else if 
-  (elem.msRequestFullscreen) { /* IE11 */
-  elem.msRequestFullscreen();
-  }
-  }
-  function closeFullscreen() {
-  if (document.exitFullscreen) {
-  document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { /* Safari */
-  document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE11 */
-  document.msExitFullscreen();
-  }
-  }
-  </script>
-  
-  <!-- JSON-LD - structured data markup Google Search -->
-  <script type="application/ld+json">{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name":  "YudaXwer",
-  "alternateName": "YudaApikey",
-  "url": "https://yudaapikey.herokuapp.com/docs"}
-  </script>
-  <p></p>
-  </div>
-	<link rel="stylesheet" href="https://onlydevcity.xyz/ikygans/core.min.css">
-	<link rel="stylesheet" href="https://onlydevcity.xyz/ikygans/alert.css">
-	
-	<link rel="stylesheet" href="https://onlydevcity.xyz/ikygans/owl.min.css">
-  <link rel="stylesheet" href="https://onlydevcity.xyz/ikygans/owl2.min.css">
-	
-	<link rel="stylesheet" href="https://onlydevcity.xyz/ikygans/icon.min.css">
-	<link rel="stylesheet" href="https://onlydevcity.xyz/ikygans/flag.min.css">
-	<link rel="stylesheet" href="https://onlydevcity.xyz/ikygans/style.min.css">
-	<link rel="shortcut icon" href="https://i.ibb.co/9cPV85f/60fc44f508ec.jpg" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Dark Admin</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/local.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- you need to include the shieldui css and js assets in order for the charts to work -->
+    <link rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+    <link id="gridcss" rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/dark-bootstrap/all.min.css" />
+
+    <script type="text/javascript" src="https://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+    <script type="text/javascript" src="https://prepbootstrap.com/Content/js/gridData.js"></script>
 </head>
 <body>
-<style>
-asu {
-	font-size: 15pt; 
-	font-family: 'Lacquer', sans-serif;
-}
-mek {
-	font-size: 10pt; 
-    font-family: 'Lacquer', sans-serif;
-	color: #red;
-}
-asu1{
-	font-size: 15pt;
-	font-family: 'Lacquer', sans-serif;
-}
-</style>
-<div class="main-wrapper">
-	<nav class="sidebar">
-		<div class="sidebar-header">
-			<a href="#" class="sidebar-brand">
-				Yuda<span> Xwer</span>
-			</a>
-			<div class="sidebar-toggler not-active">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-		<div class="sidebar-body">
-			<ul class="nav">
-				<li class="nav-item">
-				<a href="/" class="nav-link">
-				<i class="link-icon" data-feather="box"></i>
-				<span class="link-title">Home</span>
-				</a>
-				</li>
-			
-				<li class="nav-item nav-category">Yuda Api</li>
-				<li class="nav-item">
-					<a class="nav-link" data-toggle="collapse" href="#endecode" role="button" aria-expanded="false" aria-controls="endecode">
-						<i class="link-icon" data-feather="download"></i>
-						<span class="link-title">Sosial Media API</span>
-						<i class="link-arrow" data-feather="chevron-down"></i>
-					</a>
-					<div class="collapse" id="endecode">
-						<ul class="nav sub-menu">
-							<li class="nav-item">
-								<a href="/api/download/ig?url=https://www.instagram.com/p/CNtpwxuH5NK/?igshid=g26k5coikzwr&apikey=Masukkan_ApikeyNya" class="nav-link">Ig Download</a>
-							</li>
-							<li class="nav-item">
-								<a href="/api/download/fb?url=https://www.facebook.com/alanwalkermusic/videos/277641643524720&apikey=Masukkan_ApikeyNya" class="nav-link">Fb Download</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/yt/playmp3?query=Monolog-pamungkas&apikey=Masukkan_ApikeyNya" class="nav-link">YT Mp3</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/yt/playmp4?query=Monolog-pamungkas&apikey=Masukkan_ApikeyNya" class="nav-link">YT Mp4</a>
-							</li>
-							<li class="nav-item">
-								<a href="/api/download/tiktok?url=https://vt.tiktok.com/ZSJhvu1AE/&apikey=Masukkan_ApikeyNya" class="nav-link">Tiktok Download</a>
-		     				</li>
-						</ul>
-					</div>
-				</li>						
-				<li class="nav-item">
-					<a class="nav-link" data-toggle="collapse" href="#exploit" role="button" aria-expanded="false" aria-controls="exploit">
-						<i class="link-icon" data-feather="book"></i>
-						<span class="link-title">Islamic Features</span>
-						<i class="link-arrow" data-feather="chevron-down"></i>
-					</a>
-					<div class="collapse" id="exploit">
-						<ul class="nav sub-menu">
-							<li class="nav-item">
-								<a href="/api/hadits?kitab=bukhari&nomor=52&apikey=YOUR_APIKEY" class="nav-link">Hadits Shahih</a>
-							</li>
-							<li class="nav-item">
-								<a href="/api/quran?surah=1&ayat=2&apikey=YOUR_APIKEY" class="nav-link">Al - Quran</a>
-							</li>
-							<li class="nav-item">
-								<a href="/api/muslim/tahlil?apikey=YOUR_APIKEY" class="nav-link">Doa Tahlil</a>
-							</li>
-							<li class="nav-item">
-								<a href="/api/muslim/asmaulhusna?apikey=YOUR_APIKEY" class="nav-link">Asmaul Husna</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/muslim/doaharian?apikey=YOUR_APIKEY" class="nav-link">Doa Harian</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/muslim/ayatkursi?apikey=YOUR_APIKEY" class="nav-link">Ayat Kursi</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/kisahnabi?nabi=muhammad&apikey=YOUR_APIKEY" class="nav-link">Kisah Nabi</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/muslim/niatshalat?apikey=YOUR_APIKEY" class="nav-link">Niat Shalat</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/muslim/bacaanshalat?apikey=YOUR_APIKEY" class="nav-link">Bacaan Shalat</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/jadwalshalat?kota=bandung&apikey=YOUR_APIKEY" class="nav-link">Jadwal Shalat</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-
-				
-				<li class="nav-item">
-				<a class="nav-link" data-toggle="collapse" href="#primbon" role="button" aria-expanded="false" aria-controls="primbon">
-				<i class="link-icon" data-feather="star"></i>
-				<span class="link-title">Primbon APi</span>
-				<i class="link-arrow" data-feather="chevron-down"></i>
-				</a>
-				<div class="collapse" id="primbon">
-				<ul class="nav sub-menu">
-				<li class="nav-item">
-				<a href="/api/artinama/?nama=Yuda&apikey=Apikey" class="nav-link">Arti Nama</a>
-				</li>
-				<li class="nav-item">
-				<a href="/api/tanggaljadian/?tgl=30&bln=02&thn=2018&apikey=apikey" class="nav-link">Makna Tanggal Jadian</a>
-				</li>
-				<li class="nav-item">
-				<a href="/api/gabut?apikey=APIKEY" class="nav-link">Arti Mimpi</a>
-				</li>
-				</ul>
-				</div>
-				</li>
-		
-							<li class="nav-item">
-							<a class="nav-link" data-toggle="collapse" href="#otherpi" role="button" aria-expanded="false" aria-controls="otherapi">
-							<i class="link-icon" data-feather="coffee"></i>
-							<span class="link-title">Fun APIs</span>
-							<i class="link-arrow" data-feather="chevron-down"></i>
-							</a>
-							<div class="collapse" id="otherpi">
-							<ul class="nav sub-menu">
-							<li class="nav-item">
-							<a href="/api/kuis/caklontong?apikey=APIKEY" class="nav-link">Cak Lontong ( By Zahir )</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/kuis/family100?apikey=APIKEY" class="nav-link">Family 100</a>
-							</li>
-							<li class="nav-item">
-							<a href="api/kuis/tebakgambar?apikey=YOUR_APIKEY" class="nav-link">Tebak Gambar ( By Zahir )</a>
-				         	</li>
-							</ul>
-							</div>
-							</li>																
-							<li class="nav-item">
-							<a class="nav-link" data-toggle="collapse" href="#photooxyapi" role="button" aria-expanded="false" aria-controls="photooxyapi">
-							<i class="link-icon" data-feather="camera"></i>
-							<span class="link-title">Photooxy API</span>
-							<i class="link-arrow" data-feather="chevron-down"></i>
-							</a>
-							<div class="collapse" id="photooxyapi">
-							<ul class="nav sub-menu">
-							<li class="nav-item">
-							<a href="/api/photooxy/glitch?apikey=Masukkan_ApikeyNya&text=Yuda&text2=Rest APIs" class="nav-link">Glitch</a>
-							</li>										
-							<li class="nav-item">
-							<a href="api/photooxy/coffe-cup?apikey=Masukkan_Apikeynya&text=Yuda" class="nav-link">Coffe Cup</a>
-							</li>											
-							<li class="nav-item">
-							<a href="/api/photooxy/shadow?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">Shadow Text</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/photooxy/romantic?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">Romantic Text</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/photooxy/smoke?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">Smoke Text</a>
-							</li>					
-							<li class="nav-item">
-							<a href="/api/photooxy/burn-paper?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">Burn-Paper Text</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/photooxy/naruto?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">Naruto Text</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/photooxy/message-under-grass?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">Under Grass Text</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/photooxy/love-message?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">Love Text</a>
-							</li>
-							</ul>
-							</div>
-							</li>											
-							<li class="nav-item">
-							<a class="nav-link" data-toggle="collapse" href="#imagesapi" role="button" aria-expanded="false" aria-controls="imagesapi">
-							<i class="link-icon" data-feather="image"></i>
-							<span class="link-title">Images API</span>
-							<i class="link-arrow" data-feather="chevron-down"></i>
-							</a>
-							<div class="collapse" id="imagesapi">
-							<ul class="nav sub-menu">
-							<li class="nav-item">
-							<a href="/api/wallpaper/teknologi?apikey=MASUKAN_APIKEY" class="nav-link">Wallpaper Teknologi</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/wallpaper/programming?apikey=MASUKAN_APIKEY" class="nav-link">Wallpaper Progaming</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/wallpaper/cyberspace?apikey=MASUKAN_APIKEY" class="nav-link">Wallpaper CyberSpace</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/wallpaper/muslim?apikey=MASUKAN_APIKEY" class="nav-link">Wallpaper Muslim</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/wallpaper/pegunungan?apikey=MASUKAN_APIKEY" class="nav-link">Wallpaper Pegunungan</a>
-							</li>
-							</ul>
-							</div>
-							</li>
-							<li class="nav-item">
-							<a class="nav-link" data-toggle="collapse" href="#photoeditor" role="button" aria-expanded="false" aria-controls="photoeditor">
-							<i class="link-icon" data-feather="image"></i>
-							<span class="link-title">Maker APIs</span>
-							<i class="link-arrow" data-feather="chevron-down"></i>
-							</a>
-							<div class="collapse" id="photoeditor">
-							<ul class="nav sub-menu">
-							<li class="nav-item">
-							<a href="/api/maker/nulis?apikey=Masukkan_ApikeyNya&text=Awokwokwok Mager yaa:v" class="nav-link">Nulis</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/maker/attp?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">ATTP</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/maker/ttp?apikey=Masukkan_ApikeyNya&text=Yuda" class="nav-link">TTP</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/maker/skatch?apikey=Masukkan_ApikeyNya&url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmrYfgiRt1lLwNgRMgMbID62qH3EQ2T1c6RUJEQMcoCWKqVVxAg7R_LfM&s=10" class="nav-link">Scatch Effect</a>
-							</li>
-							<li class="nav-item">
-							<a href="/api/maker/emoji2png?apikey=Masukkan_ApikeyNya&text=🗿" class="nav-link">Emoji2Png</a>
-							</li>
-							<li class="nav-item">
-							<a href="api/mememaker3?teks=aku%20sangat%20tidak%20peduli&img_url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaVPHWMTO7jGoZP0QHiqlbODT9Gjxo1HnSug&usqp=CAU&apikey=YOUR_APIKEY" class="nav-link">Meme Maker 3</a>
-							</l>
-							<li class="nav-item">
-							<a href="api/stickermeme?teks=aku%20sangat%20tidak%20peduli&img_url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaVPHWMTO7jGoZP0QHiqlbODT9Gjxo1HnSug&usqp=CAU&apikey=YOUR_APIKEY" class="nav-link">Sticker Meme</a>
-							</li>																	
-					</ul>
-							</div>
-							</li>
-					<li class="nav-item nav-category">About</li>
-					<li class="nav-item">
-					<a class="nav-link" data-toggle="collapse" href="#sosmed" role="button" aria-expanded="false" aria-controls="sosmed">
-					<i class="link-icon" data-feather="star"></i>
-					<span class="link-title">Sosial Media</span>
-					<i class="link-arrow" data-feather="chevron-down"></i>
-					</a>
-					<div class="collapse" id="sosmed">
-					<ul class="nav sub-menu">
-					<li class="nav-item">
-					<a href="href="https://github.com/yuda112" class="nav-link">Github</a>
-					</li>				
-					<li class="nav-item">
-					<a href="https://api.whatsapp.com/send/?phone=6281370435024&text=min%20mau%20beli%20apikey&app_absent=0" class="nav-link">WhatsApp</a>
-					</li>
-					<li class="nav-item">
-					<a href="https://instagram.com/yuda.dika.12" class="nav-link">Instagram</a>
-					</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<style>
-		asu {
-		font-size: 15pt; 
-		font-family: 'Sedgwick Ave', cursive;
-		}
-		mek {
-		font-size: 10pt; 
-		font-family: 'Sedgwick Ave', cursive;
-		color: #red;
-		}
-		asu1{
-		font-size: 20pt;
-		font-family: 'Berkshire Swash', cursive;
-		}
-		</style>
-	<li class="nav-item nav-category">Contact</li>
-	
-	<li class="nav-item">
-	
-	
-	</ul>
-	</li>
-	</nav>	
-	<nav class="settings-sidebar">
-	<div class="sidebar-body">
-	<a href="#" class="settings-sidebar-toggler">
-	<i data-feather="settings"></i>
-	</a>
-	<div class="theme-wrapper">
-	<h6 class="text-center text-muted">Menu</h6><hr>
-	<a href="https://wa.me/6281370435024" class="btn btn-block btn-outline-primary">Beli Api Key</a>
-	<a href="https://wa.me/6281370435024" class="btn btn-block btn-outline-primary">Lapor Bug</a>
-	
-	</nav>	
-	<div class="page-wrapper">
-	
-	<nav class="navbar">
-	<a href="#" class="sidebar-toggler">
-	<i data-feather="align-left"></i>
-	</a>
-	<div class="navbar-content">
-	<a href="index">
-	<div class="h4 text-white m-3">Yuda Xwer</div> 
-	</a>
-	<ul class="navbar-nav">
-	<li class="nav-item dropdown nav-apps">
-	<a class="nav-link dropdown-toggle" href="#" id="appsDropdown" onclick="openFullscreen();" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	<i data-feather="maximize"></i>
-	</a>
-	</li>
-	<li class="nav-item dropdown nav-notifications">
-	<a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	<i data-feather="clock"></i>
-	<div class="indicator">
-	<div class="circle"></div>
-	</div>
-	</a>
-	<div class="dropdown-menu" aria-labelledby="notificationDropdown">
-	<div class="dropdown-header d-flex align-items-center justify-content-between">
-	<p class="mb-0 font-weight-medium">Time & Date</p>
-	<br>
-	
-	</div>
-	<div class="dropdown-body">
-	
-	Saturday<br>
-	<p>
-	
-	<div class="battery">
-	
-	
-	
-	<div id="batteryLevel"></div>
-	battery precentage:
-	<span id="percentageLevel"></span>
-	
-	
-	</p>
-	<br>
-	AU
-	</div>
-	<div class="dropdown-footer d-flex align-items-center justify-content-center">
-	Yuda Xwer
-	</div>
-	</li>
-	<li class="nav-item dropdown nav-apps">
-	<a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	<i data-feather="grid"></i>
-	</a>
-	<div class="dropdown-menu" aria-labelledby="appsDropdown">
-	<div class="dropdown-header d-flex align-items-center justify-content-between">
-	<p class="mb-0 font-weight-medium">
-	Web App
-	</p>
-	</div>
-	<div class="dropdown-body">
-	<div class="d-flex align-items-center apps">
-	<a href=https://github.com/yudadika21" target="_blank"><i data-feather="message-square" class="icon-lg"></i><p>
-	Github
-	</p>
-	</a>
-	<a href="https://api.whatsapp.com/send/?phone=6281370435024&text=min%20mau%20beli%20apikey&app_absent=0" target="_blank"><i data-feather="globe" class="icon-lg"></i><p>
-	WhatsApp
-	</p>
-	</a>
-	<div class="dropdown-footer d-flex align-items-center justify-content-center">
-	Yuda Xwer
-	</div>
-	</div>
-	</li>
-	</ul>
-	<nav class="settings-sidebar">
-	<div class="sidebar-body">
-	<a href="#" class="settings-sidebar-toggler">
-	<i data-feather="settings"></i>
-	</a>
-	<div class="theme-wrapper">
-	<h6 class="text-center text-muted">Menu</h6><hr>
-	<a href="https://wa.me/6281370435024" class="btn btn-block btn-outline-primary">Beli Api Key</a>
-	<a href="https://wa.me/6281370435024" class="btn btn-block btn-outline-primary">Lapor Bug</a>
-	</div>
-	</div>
-	</div>
-	</nav>	
-	
-  <div class="page-content">
-  <div class="row">
-  <div class="d-flex justify-content-between">
-  </div>
- <div class="col-md-12 grid-margin">
-  <div class="card gradient-card">
-  <div class="card-body py-0 px-0 px-sm-3">
-  <div class="row align-items-center">
-  <div class="col-4 col-sm-3 col-xl-2">
-  <img src="https://k.top4top.io/p_1930y2esd1.png" class="gradient-corona-img img-fluid" alt="">
-  </div>
-  <div class="col-5 col-sm-7 col-xl-8 p-0">
-  <asu>Yok Gabung Sama Gw</asu>
-  <p class="mb-0 font-weight-normal d-none d-sm-block">🗿</p>
-  </div>
-  <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
-  <span>
-  <a href="#" target="_blank" class="btn btn-primary btn-rounded get-started-btn">Join</a>
-  </span>
-  </div>
-  </div>
-  </div>
-  </div>
-  <br>
-  <div class="alert alert-primary" role="alert">
-   Yang Mau Apikey Nya Chat <a href="#" class="alert-link">WhatsApp</a>, thanks.
-  </div>
-  </div>
-  <div class="col-md-12 grid-margin">
-	<div class="card">
-	<div class="card-body">
-	<div class="row no-gutters align-items-center">
-	<div class="col mr-2">
-	<div class="font-weight-bold text-info text-uppercase mb-1">Ip Andress</div>
-	 <h3 class="mb-1 number-font">
-	 <div id="ipanda"></div>
-	</div>
-	<div class="col-auto">
-	<i class="h2 text-info" data-feather="rss"></i>
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-	<div class="col-md-12 grid-margin">
-	<div class="card">
-	<div class="card-body">
-	<div class="row no-gutters align-items-center" id="info">
-	<div class="col mr-2">
-	<div class="font-weight-bold text-info text-uppercase mb-1">Visitor</div>
-	<h3 class="mb-1 number-font">
-	<div id="LIAT" ></div>
-	<script>
-	var _0x1412=["\x4C\x49\x41\x54","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x70\x65\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x76\x61\x6C\x75\x65","\x25","\x74\x68\x65\x6E","\x6A\x73\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x70\x69\x2E\x63\x6F\x75\x6E\x74\x61\x70\x69\x2E\x78\x79\x7A\x2F\x68\x69\x74\x2F\x68\x61\x64\x69\x2D\x61\x70\x69\x2D\x76\x69\x65\x77\x65\x72\x2F"];const viewer=document[_0x1412[1]](_0x1412[0]);const persen=document[_0x1412[1]](_0x1412[2]);fetch(_0x1412[8])[_0x1412[6]]((_0xbf23x3)=>{return _0xbf23x3[_0x1412[7]]()})[_0x1412[6]]((_0xbf23x3)=>{viewer[_0x1412[3]]= _0xbf23x3[_0x1412[4]];persen[_0x1412[3]]= _0xbf23x3[_0x1412[4]]/ 100+ _0x1412[5]})
-	</script>
-	</div>
-	<div class="col-auto">
-	<i class="h2 text-info" data-feather="user"></i>
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-	<div class="col-md-12 grid-margin">
-	<div class="card">
-	<div class="card-body">
-	<div class="row no-gutters align-items-center">
-	<div class="col mr-2">
-	<div class="font-weight-bold text-info text-uppercase mb-1">Road To Idul Fitri</div>
-	<h3 class="mb-1 number-font">
-	<div id="timee"></div>
-	</div>
-	<div class="col-auto">
-	<i class="h2 text-info" data-feather="moon"></i>
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-	<style type="text/css">
-	.Brush{
-	font-family: 'Nanum Brush Script', cursive;
-	}
-	.judul{
-	font-family: 'Megrim',cursive;
-	}
-	.tell{
-	font-family: 'Lacquer', sans-serif;
-	}
-	
-	</style>
-		<div class="col-md-12 grid-margin">
-		<div class="card">
-		<div class="card">
-		<div class="card-header">
-		<asu1><i class="link-icon" data-feather="smile"></i>  Welcome To My Rest APIs</asu1>
-		</div>
-		<div class="card-body">
-		<img src="https://i.ibb.co/NFDbMyv/yuda.jpg" alt="Iri ke odc bilang bawahan :v" width="100%" >
-			<br><br><p><b>
-						API KEY :<br>? [ 15K  ] 2 Bulan / Unlimited 60 Day <br>? [ 10K ] Sebulan / Unlimited 30 Day <br>? [ 5K ] 7 Day / Unlimited 7 Day<br> <br>Ingin Buy / Beli Api Key ? Silahkan Chat Admin Via WhatsApp
-						<br>
-						Chat Me ON WhatsApp <a href="https://wa.me/6281370435024"><strong>Klik disini</strong></a><br><br>
-					<p>
-					</b>
-					</p>
-				</div>
-			</div>
-		</div>
-		</div>
-		</div>
-		<div class="col-md-12 grid-margin">
-		<div class="card">
-		<div class="card-body">
-		<h3 class="card-title"><i class="link-icon" data-feather="key" aria-hidden="true"></i> Check Apikey</h3>
-		<div class="card-body text-sm-left font-weight-bold">
-		<p class="status" style="color: white; font-size: 20px;"></p>
-		<h2 class="warn" style="color: red"></h2>
-		<label for="URL">Type Your Apikey :</label>
-        <input type="text" class="form-control" placeholder="apikey" name="apikey" required="">
-      	<small id="textHelp" class="font">Note: perlu diketahui, apikey adalah bersifat pribadi.</small>
-		</br></br><center>
-		<button type="submit" id="diklikcok" class="btn btn-primary" onclick="sendata()">Check</button>
-		</div>
-		</div>
-		</div>
-		</div>
-		<div class="row">
-		<div class="col-md-12 grid-margin stretch-card">
-		<div class="card">
-		<div class="card-header">
-		<asu1><i class="link-icon" data-feather="smile"></i>  Selamat Berpuasa</asu1>
-		</div>
-		<div class="card-body">
-		<img src="https://l.top4top.io/p_1930y1mwz0.png" alt="banner" class="img-fluid rounded mx-auto d-block mb-4"/>
-		<asu>Marhaban Ya Ramadhan Selamat Datang Di Website Kami, Mohon Gunakan Semua Alat Dengan Bijak yaa..<br>- Stay Halal Brother :v</asu>
-		</div>
-		</div>
-		</div>
-		</div>
-	    <div class="row">
-      	<div class="col-md-12 grid-margin stretch-card">
-    	<div class="card">
-	    <div class="card-header">
-		<font size="5" class="card-title"><b>Quotes of the day</b></font><br>
-		<i>"Not Friends, Not Enemies, Just Strangers with Some Memories"</i>
-		</div>
-		</div>
-		</div>
-		</div>
-
-		<div class="row">
-		<div class="col-md-12 grid-margin stretch-card">
-		<div class="card">
-		<div class="card-header">
-		<h5><i class="link-icon" data-feather="info"></i>  Rules Website</h5>
-		</div>
-		<div class="card-body">
-		<h5 class="card-title">Baca S&K Dan Patuhi...</h5>
-		<ol>
-		<li>- Dilarang Nembak Kalau Nembak Gw Gk Papa:v</li>
-		<li>- Jika Anda Menemukan Bug / Error Silahkan Hubungin Pihak Penyedia Api.</li>
-		<li>- Segera Lapor Apabila Ada Tools Yang Tidak Berfungsi Dengan Baik!. </li>
-		<li>- Jika Ingin Beli Api Key Kalian Bisa Langsung Hubungi Penyedia Api.</li>
-		<li>- Jika Anda Melihat / Menemukan Api Key Yang Ter Public / Tersebar Segera Hubungi Admin Anda Mendapatkan Reward.</li>
-		<li>Thanks To Itsmeiky</li>
-		</ol>
-		</div>
-		</div>
-		</div>
-		</div>
-	
-		<div class="col-md-12 grid-margin stretch-card">
-			<div class="card">
-				<div class="card-body">
-					<h6 class="card-title"> My Partner</h6>
-					<div class="owl-carousel owl-theme owl-auto-play">
-            <div class="item">
-              <img src="https://i.ibb.co/0mFKhxJ/boy.jpg" alt="item-image">
+    <div id="wrapper">
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Admin Panel</a>
             </div>
-             <img src="https://i.ibb.co/BBh9R5h/FB-IMG-16202754125759678.jpg" alt="item-image">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul id="active" class="nav navbar-nav side-nav">
+                    <li class="selected"><a href="index.html"><i class="fa fa-bullseye"></i> Dashboard</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-tasks"></i> Portfolio</a></li>
+                    <li><a href="blog.html"><i class="fa fa-globe"></i> Blog</a></li>
+                    <li><a href="signup.html"><i class="fa fa-list-ol"></i> SignUp</a></li>
+                    <li><a href="register.html"><i class="fa fa-font"></i> Register</a></li>
+                    <li><a href="timeline.html"><i class="fa fa-font"></i> Timeline</a></li>
+                    <li><a href="forms.html"><i class="fa fa-list-ol"></i> Forms</a></li>
+                    <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
+                    <li><a href="bootstrap-elements.html"><i class="fa fa-list-ul"></i> Bootstrap Elements</a></li>
+                    <li><a href="bootstrap-grid.html"><i class="fa fa-table"></i> Bootstrap Grid</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right navbar-user">
+                    <li class="dropdown messages-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">2 New Messages</li>
+                            <li class="message-preview">
+                                <a href="#">
+                                    <span class="avatar"><i class="fa fa-bell"></i></span>
+                                    <span class="message">Security alert</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="message-preview">
+                                <a href="#">
+                                    <span class="avatar"><i class="fa fa-bell"></i></span>
+                                    <span class="message">Security alert</span>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Go to Inbox <span class="badge">2</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown user-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Steve Miller<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                            <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li>
+                        <form class="navbar-search">
+                            <input type="text" placeholder="Search" class="form-control">
+                        </form>
+                    </li>
+                </ul>
             </div>
-          </div>   
-             	</div>
-				</div>
-				</div>
-	<p><iframe frameborder="0" height="0" src="https://d.top4top.io/m_1674i58hv0.mp3" width="0"></iframe></p>
-</div><footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
-				<p class="text-muted text-center text-md-left">
-					Copyright ? 2021 <a href="" target="_blank">Yuda Xwer</a>. All rights reserved
-				</p>
-				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">
-					Coded With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i> By YudaXwer
-				</p>
-			</footer>
-		</div>
-	</div>
-<script>
-				// Akhir Hitungan Mundur
-				var countDownDate = new Date("May 14, 2021 00:00:00").getTime();
+        </nav>
 
-				// Update Hitungan Mundur Setiap 1 Detik
-				var x = setInterval(function() {
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Dashboard <small>Statistics and more</small></h1>
+                    <div class="alert alert-dismissable alert-warning">
+                        <button data-dismiss="alert" class="close" type="button">&times;</button>
+                        Welcome to the admin dashboard! Feel free to review all pages and modify the layout to your needs. 
+                        <br />
+                        This theme uses the <a href="https://www.shieldui.com">ShieldUI</a> JavaScript library for the 
+                        additional data visualization and presentation functionality illustrated here.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Visits Based on a 10 days data</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="shieldui-chart1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-rss"></i> Feed</h3>
+                        </div>
+                        <div class="panel-body feed">
+                            <section class="feed-item">
+                                <div class="icon pull-left">
+                                    <i class="fa fa-comment"></i>
+                                </div>
+                                <div class="feed-item-body">
+                                    <div class="text">
+                                        <a href="#">John Doe</a> commented on <a href="#">What Makes Good Code Good</a>.
+                                    </div>
+                                    <div class="time pull-left">
+                                        3 h
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="feed-item">
+                                <div class="icon pull-left">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <div class="feed-item-body">
+                                    <div class="text">
+                                        <a href="#">Merge request #42</a> has been approved by <a href="#">Jessica Lori</a>.
+                                    </div>
+                                    <div class="time pull-left">
+                                        10 h
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="feed-item">
+                                <div class="icon pull-left">
+                                    <i class="fa fa-plus-square-o"></i>
+                                </div>
+                                <div class="feed-item-body">
+                                    <div class="text">
+                                        New user <a href="#">Greg Wilson</a> registered.
+                                    </div>
+                                    <div class="time pull-left">
+                                        Today
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="feed-item">
+                                <div class="icon pull-left">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <div class="feed-item-body">
+                                    <div class="text">
+                                        Server fail level raises above normal. <a href="#">See logs</a> for details.
+                                    </div>
+                                    <div class="time pull-left">
+                                        Yesterday
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="feed-item">
+                                <div class="icon pull-left">
+                                    <i class="fa fa-archive"></i>
+                                </div>
+                                <div class="feed-item-body">
+                                    <div class="text">
+                                        <a href="#">Database usage report</a> is ready.
+                                    </div>
+                                    <div class="time pull-left">
+                                        Yesterday
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="feed-item">
+                                <div class="icon pull-left">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </div>
+                                <div class="feed-item-body">
+                                    <div class="text">
+                                        <a href="#">Order #233985</a> needs additional processing.
+                                    </div>
+                                    <div class="time pull-left">
+                                        Wednesday
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="feed-item">
+                                <div class="icon pull-left">
+                                    <i class="fa fa-arrow-down"></i>
+                                </div>
+                                <div class="feed-item-body">
+                                    <div class="text">
+                                        <a href="#">Load more...</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Traffic Sources One month tracking </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="shieldui-grid1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Logins per week</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="shieldui-chart2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-magnet"></i> Server Overview</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="server-stats">
+                                <li>
+                                    <div class="key pull-right">CPU</div>
+                                    <div class="stat">
+                                        <div class="info">60% / 37°C / 3.3 Ghz</div>
+                                        <div class="progress progress-small">
+                                            <div style="width: 70%;" class="progress-bar progress-bar-danger"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="key pull-right">Mem</div>
+                                    <div class="stat">
+                                        <div class="info">29% / 4GB (16 GB)</div>
+                                        <div class="progress progress-small">
+                                            <div style="width: 29%;" class="progress-bar"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="key pull-right">LAN</div>
+                                    <div class="stat">
+                                        <div class="info">6 Mb/s <i class="fa fa-caret-down"></i>&nbsp; 3 Mb/s <i class="fa fa-caret-up"></i></div>
+                                        <div class="progress progress-small">
+                                            <div style="width: 48%;" class="progress-bar progress-bar-inverse"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-					// Mengambil Tanggal Dan Waktu
-					var now = new Date().getTime();
+                </div>
+                <div class="col-lg-4">
+                    <header>
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a data-toggle="tab" href="#stats">Users</a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" href="#report">Favorites</a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" href="#dropdown1">Commenters</a>
+                            </li>
+                        </ul>
+                    </header>
+                    <div class="body tab-content">
+                        <div class="tab-pane clearfix active" id="stats">
+                            <h5 class="tab-header"><i class="fa fa-calendar-o fa-2x"></i> Last logged-in users</h5>
+                            <ul class="news-list">
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Ivan Gorge</a></div>
+                                        <div class="position">Software Engineer</div>
+                                        <div class="time">Last logged-in: Mar 12, 11:11</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Roman Novak</a></div>
+                                        <div class="position">Product Designer</div>
+                                        <div class="time">Last logged-in: Mar 12, 19:02</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Teras Uotul</a></div>
+                                        <div class="position">Chief Officer</div>
+                                        <div class="time">Last logged-in: Jun 16, 2:34</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Deral Ferad</a></div>
+                                        <div class="position">Financial Assistant</div>
+                                        <div class="time">Last logged-in: Jun 18, 4:20</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Konrad Polerd</a></div>
+                                        <div class="position">Sales Manager</div>
+                                        <div class="time">Last logged-in: Jun 18, 5:13</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="report">
+                            <h5 class="tab-header"><i class="fa fa-star fa-2x"></i> Popular contacts</h5>
+                            <ul class="news-list news-list-no-hover">
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Pol Johnsson</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Terry Garel</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Eruos Forkal</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Remus Reier</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Lover Lund</a></div>
+                                        <div class="options">
+                                            <button class="btn btn-xs btn-success">
+                                                <i class="fa fa-phone"></i>
+                                                Call
+                                            </button>
+                                            <button class="btn btn-xs btn-warning">
+                                                <i class="fa fa-envelope-o"></i>
+                                                Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="dropdown1">
+                            <h5 class="tab-header"><i class="fa fa-comments fa-2x"></i> Top Commenters</h5>
+                            <ul class="news-list">
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Edin Garey</a></div>
+                                        <div class="comment">
+                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+                                            aut odit aut fugit,sed quia
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Firel Lund</a></div>
+                                        <div class="comment">
+                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                             esse cillum dolore eu fugiat.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Jessica Desingter</a></div>
+                                        <div class="comment">
+                                            Excepteur sint occaecat cupidatat non proident, sunt in
+                                             culpa qui officia deserunt.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Novel Forel</a></div>
+                                        <div class="comment">
+                                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-user fa-4x pull-left"></i>
+                                    <div class="news-item-info">
+                                        <div class="name"><a href="#">Wedol Reier</a></div>
+                                        <div class="comment">
+                                            Laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis
+                                            et quasi.
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#wrapper -->
 
-					// Find the distance between now and the count down date
-					var distance = countDownDate - now;
+    <script type="text/javascript">
+        jQuery(function ($) {
+            var performance = [12, 43, 34, 22, 12, 33, 4, 17, 22, 34, 54, 67],
+                visits = [123, 323, 443, 32],
+                traffic = [
+                {
+                    Source: "Direct", Amount: 323, Change: 53, Percent: 23, Target: 600
+                },
+                {
+                    Source: "Refer", Amount: 345, Change: 34, Percent: 45, Target: 567
+                },
+                {
+                    Source: "Social", Amount: 567, Change: 67, Percent: 23, Target: 456
+                },
+                {
+                    Source: "Search", Amount: 234, Change: 23, Percent: 56, Target: 890
+                },
+                {
+                    Source: "Internal", Amount: 111, Change: 78, Percent: 12, Target: 345
+                }];
 
-					// Kalkulator Waktu Hari, Jam, Menit, Detik 
-					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-					// Menampilkan Hasil Di Dalam element Menggunakan id="time"
-					document.getElementById("timee").innerHTML = days + " Hari " + hours + " Jam " + minutes + " Menit " + seconds + " Detik ";
+            $("#shieldui-chart1").shieldChart({
+                theme: "dark",
 
-					// Ketika countdown timer sudah berakhir Maka Tulisan Berakhir
-					if (distance < 0) {
-						clearInterval(x);
-						document.getElementById("timee").innerHTML = "Berakhir";
-					}
-				}, 1000);
-			</script>
-			
-			<script type="text/javascript">
-			function updateClock(){
-			var now = new Date();
-			var dname = now.getDay(),
-			mo = now.getMonth(),
-			dnum = now.getDate(),
-			yr = now.getFullYear(),
-			hou = now.getHours(),
-			min = now.getMinutes(),
-			sec = now.getSeconds(),
-			pe = "PAGI";
-			
-			if(hou >= 12){
-			pe = "MALAM";
-			}
-			if(hou == 0){
-			hou = 12;
-			}
-			if(hou > 12){
-			hou = hou - 12;
-			}
-			
-			Number.prototype.pad = function(digits){
-			for(var n = this.toString(); n.length < digits; n = 0 + n);
-			return n;
-			}
-			
-			var months = ["Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
-			var week = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-			var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
-			var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
-			for(var i = 0; i < ids.length; i++)
-			document.getElementById(ids[i]).firstChild.nodeValue = values[i];
-			}
-			
-			function initClock(){
-			updateClock();
-			window.setInterval("updateClock()", 1);
-			}
-			</script>
-			<script> 
-			
-			
-			var batteryLevel = document.getElementById("batteryLevel");
-			
-			
-			var styleBatteryLevel = batteryLevel.style;
-			
-			
-			var percentageLevel = document.getElementById("percentageLevel");
-			
-			
-			navigator.getBattery().then(function(battery) {
-			
-			function updateAllBatteryInfo(){
-			updateLevelInfo();
-			
-			}
-			
-			updateAllBatteryInfo();
-			
-			
-			
-			battery.addEventListener('levelchange',      function(){
-			
-			setInterval(function(){
-			
-			updateLevelInfo()
-			
-			},1000);
-			});
-			
-			function updateLevelInfo(){
-			
-			var numBattery = battery.level * 100;
-			percentageLevel.textContent=Math.round(numBattery) + "%";
-			
-			styleBatteryLevel.height=numBattery + "%";
-			
-			if(numBattery<=15) {
-			
-			styleBatteryLevel.background="red";
-			
-			
-			}
-			};
-			
-			});
-			
-			
-			
-			</script>
-			
-	<script src="https://onlydevcity.xyz/ikygans/core.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/alert.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/owl.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/ikygans.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/feather.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/template.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/script.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/checker.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/ip.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/kon.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/date.js"></script>
-	<script src="https://onlydevcity.xyz/ikygans/alertt.js"></script>
-	<script src="https://lollipop-smm.com/minton/assets/libs/sweetalert2/sweetalert2.min.js"></script>
-	</body>
-    <script src="https://chatwee-api.com/v2/script/6069e43c514d04375e2f3042.js"></script>
-    <script>
-	Swal.fire(
-	'Selamat Datang Stah',
-	'Jangan Buli Gw;(',
-	'success'
-	);
-	// Set the date we're counting down to
-	var countDownDate = new Date("May 14, 2021 00:00:00").getTime();
-	
-	// Update the count down every 1 second
-	var x = setInterval(function() {
-	
-	// Get today's date and time
-	var now = new Date().getTime();
-	
-	// Find the distance between now and the count down date
-	var distance = countDownDate - now;
-	
-	// Time calculations for days, hours, minutes and seconds
-	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	
-	// Output the result in an element with id="demo"
-	document.getElementById("mulai").innerHTML = "Road To Idul Fitry: " + days + "Hari, " + hours + "Jam, "
-	+ minutes + "Menit, " + seconds + "Detik ";
-	
-	// If the count down is over, write some text 
-	if (distance < 0) {
-	clearInterval(x);
-	document.getElementById("mulai").innerHTML = "EXPIRED";
-	}
-	}, 1000);
-	</script>
-	</html>
+                primaryHeader: {
+                    text: "Visitors"
+                },
+                exportOptions: {
+                    image: false,
+                    print: false
+                },
+                dataSeries: [{
+                    seriesType: "area",
+                    collectionAlias: "Q Data",
+                    data: performance
+                }]
+            });
+
+            $("#shieldui-chart2").shieldChart({
+                theme: "dark",
+                primaryHeader: {
+                    text: "Traffic Per week"
+                },
+                exportOptions: {
+                    image: false,
+                    print: false
+                },
+                dataSeries: [{
+                    seriesType: "pie",
+                    collectionAlias: "traffic",
+                    data: visits
+                }]
+            });
+
+            $("#shieldui-grid1").shieldGrid({
+                dataSource: {
+                    data: traffic
+                },
+                sorting: {
+                    multiple: true
+                },
+                rowHover: false,
+                paging: false,
+                columns: [
+                { field: "Source", width: "170px", title: "Source" },
+                { field: "Amount", title: "Amount" },                
+                { field: "Percent", title: "Percent", format: "{0} %" },
+                { field: "Target", title: "Target" },
+                ]
+            });            
+        });        
+    </script>
+</body>
+</html>
