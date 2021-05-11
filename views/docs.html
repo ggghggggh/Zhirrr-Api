@@ -1,554 +1,1253 @@
+<!--
+=========================================================
+* Material Dashboard Dark Edition - v2.1.0
+=========================================================
 
+* Product Page: https://www.creative-tim.com/product/material-dashboard-dark
+* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+
+* Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Dark Admin</title>
-
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/local.css" />
-
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- you need to include the shieldui css and js assets in order for the charts to work -->
-    <link rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
-    <link id="gridcss" rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/dark-bootstrap/all.min.css" />
-
-    <script type="text/javascript" src="https://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
-    <script type="text/javascript" src="https://prepbootstrap.com/Content/js/gridData.js"></script>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Material Dashboard Dark Edition by Creative Tim
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
-<body>
-    <div id="wrapper">
-          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+
+<body class="dark-edition">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="black" data-image="../assets/img/sidebar-2.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Creative Tim
+        </a></div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="views/docs.html">
+              <i class="material-icons">home</i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./user.html">
+              <i class="material-icons">person</i>
+              <p>User Profile</p>
+            </a>
+          </li>     
+
+              <li class="dropdown">                        
+          <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span>Photooxy Text</span></a>
+
+                        <ul class="dropdown-menu">
+
+                   <a class="nav-link" href="/api/photooxy/shadow?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Shadow Text</a>
+
+		           <a class="nav-link" href="/api/photooxy/romantic?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Romantic Text</a>
+
+		           <a class="nav-link" href="/api/photooxy/smoke?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Smoke Text</a>
+
+		           <a class="nav-link" href="/api/photooxy/burn-paper?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Burn paper Text</a>
+
+		           <a class="nav-link" href="/api/photooxy/naruto?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Naruto Text</a>
+
+		           <a class="nav-link" href="/api/photooxy/love-message?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Love Text</a>
+
+		           <a class="nav-link" href="/api/photooxy/message-under-grass?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Under Grass Text</a>
+
+		           <a class="nav-link" href="/api/photooxy/glitch?apikey=Masukkan_ApikeyNya&text=Yuda&text2=Rest APIs" target="_blank">Glitch Text</a>
+
+		           <a class="nav-link" href="api/photooxy/double-heart?apikey=Masukkan_Apikeynya&text=Yuda" target="_blank">double heart text</a>
+
+		           <a class="nav-link" href="api/photooxy/butterfly?apikey=Masukkan_Apikeynya&text=Yuda" target="_blank">Flower Text</a>
+                
+                   <a class="nav-link" href="api/photooxy/coffe-cup?apikey=Masukkan_Apikeynya&text=Yuda" target="_blank">CoffeCup Text</a>
+
+  
+                        </ul>
+
+                     </li>
+   <li class="dropdown">                        
+<a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span> Text Pro</span></a>
+
+                        <ul class="dropdown-menu">
+
+                   <a class="nav-link" href="/api/textpro/natural-leaves?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Natural-leaves Text</a>
+
+		           <a class="nav-link" href="/api/textpro/black-pink?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Blackpink Text</a>
+
+		           <a class="nav-link" href="/api/textpro/drop-water?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Dropwater Text</a>
+
+		           <a class="nav-link" href="/api/textpro/logo-wolf?apikey=Masukkan_ApikeyNya&text=Yuda&text2=Dika" target="_blank">Logo Wolf</a>
+
+		           <a class="nav-link" href="/api/textpro/logo-wolf2?apikey=Masukkan_ApikeyNya&text=Yuda&text2=Dika" target="_blank">Logo Wolf2</a>
+
+		           <a class="nav-link" href="/api/textpro/christmas?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Christmas Text Image</a>
+
+		           <a class="nav-link" href="/api/textpro/3d-gradient?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">3D Gradient Text Image</a>
+
+		           <a class="nav-link" href="/api/textpro/porn-hub?apikey=Masukkan_ApikeyNya&text1=Yuda&text2=Gans" target="_blank">Pornhub Text</a>
+                        </ul>
+
+                     </li>
+                   <li class="dropdown">                        
+                   <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span>Maker Menu</span></a>
+
+                   <ul class="dropdown-menu">
+                  
+                   <a class="nav-link" href="/api/maker/nulis?apikey=Masukkan_ApikeyNya&text=Awokwokwok Mager yaa:v" target="_blank">Nulis Buku</a>
+
+                   <a class="nav-link" href="/api/maker/tololserti?apikey=Masukkan_ApikeyNya&nama=Yuda" target="_blank">Tolol Serti</a>
+
+		           <a class="nav-link" href="/api/maker/attp?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Attp</a>
+
+		           <a class="nav-link" href="/api/maker/ttp?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Ttp</a>
+
+		           <a class="nav-link" href="/api/maker/emoji2png?apikey=Masukkan_ApikeyNya&text=ðŸ˜‚" target="_blank">EmojinToPng</a>
+                   <a class="nav-link" href="/api/maker/skatch?apikey=Masukkan_ApikeyNya&url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmrYfgiRt1lLwNgRMgMbID62qH3EQ2T1c6RUJEQMcoCWKqVVxAg7R_LfM&s=10" target="_blank">Skatch Effect</a>
+
+		       
+		              <a class="nav-link" href="/api/maker/harta-tahta?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Harta Tahta</a>
+               
+                     </ul>
+                  </li>
+  <li class="dropdown">                        
+                   <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span>Sertifikat Menu</span></a>
+
+                   <ul class="dropdown-menu">
+                  
+                    <a class="nav-link" href="/api/maker/tololserti?apikey=Masukkan_ApikeyNya&text=Awokwokwok Mager yaa:v" target="_blank">Tolol Serti</a>
+                   <a class="nav-link" href="/api/maker/fuckboyserti?apikey=Masukkan_ApikeyNya&nama=Yuda" target="_blank">Fuckboy Serti</a>
+		           <a class="nav-link" href="/api/maker/fuckgirlserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Fuckgirl Serti </a>
+		           <a class="nav-link" href="/api/maker/bucinserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Bucin Serti</a>
+		           <a class="nav-link" href="/api/maker/pacarserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Pacar Serti</a>
+                   <a class="nav-link" href="/api/maker/goodboyserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">GoodBoy Serti</a>
+	               <a class="nav-link" href="/api/maker/goodgirlserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">GoodGirl Serti</a>
+                   <a class="nav-link" href="/api/maker/badboyserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">BadBoy Serti</a>
+                   <a class="nav-link" href="/api/maker/badgirlserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">BadGirl Serti</a>                 
+                   <a class="nav-link" href="/api/maker/hekelserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Hekel Serti</a>
+                   <a class="nav-link" href="/api/maker/babuserti?apikey=Masukkan_ApikeyNya&nama=Yuda" target="_blank">Babu Serti</a>
+		           <a class="nav-link" href="/api/maker/ffserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Ff Serti </a>
+		           <a class="nav-link" href="/api/maker/bocilepepserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">BocilEpep Serti</a>
+		           <a class="nav-link" href="/api/maker/gayserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Gay Serti</a>
+                   <a class="nav-link" href="/api/maker/surgaserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Surga Serti</a>
+                   <a class="nav-link" href="/api/maker/pinterserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Pinter Serti</a>
+                   <a class="nav-link" href="/api/maker/editodberkelasserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Editor Berkelas Serti</a>
+                   <a class="nav-link" href="/api/maker/goodlookingserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Goodlooking Serti</a>                 
+                   <a class="nav-link" href="/api/maker/fucekboyserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">FucekBoy Serti</a>
+                   <a class="nav-link" href="/api/maker/jametserti?apikey=Masukkan_ApikeyNya&nama=Yuda" target="_blank">Jamet Serti</a>
+		           <a class="nav-link" href="/api/maker/youtuberserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">Youtuber Serti </a>
+		           <a class="nav-link" href="/api/maker/fftourserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">FFTour Serti</a>
+		           <a class="nav-link" href="/api/maker/fftourserti2?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">FFTour Serti2</a>
+                   <a class="nav-link" href="/api/maker/fftourserti3?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">FFTour Serti3</a>	       
+		           <a class="nav-link" href="/api/maker/fftourserti4?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">FFTour Serti4</a>
+                   <a class="nav-link" href="/api/maker/fftourserti5?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">FFTour Serti5</a>
+                   <a class="nav-link" href="/api/maker/mltourserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">MLTour Serti</a>                              
+                   <a class="nav-link" href="/api/maker/mltourserti2?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">MLTour Serti2</a>
+                   <a class="nav-link" href="/api/maker/mltourserti3serti?apikey=Masukkan_ApikeyNya&nama=Yuda" target="_blank">MLTour Serti3</a>
+		           <a class="nav-link" href="/api/maker/mltourserti4?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">MLTour Serti4</a>
+	               <a class="nav-link" href="/api/maker/mltourserti5?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">MLTour Serti5</a>		       
+	               <a class="nav-link" href="/api/maker/pubgtourserti?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">PubgTour Serti</a>
+                   <a class="nav-link" href="/api/maker/pubgtourserti2?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">PubgTour Serti2</a>		       
+		           <a class="nav-link" href="/api/maker/pubgtourserti3?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">PubgTour Serti3</a>
+                   <a class="nav-link" href="/api/maker/pubgtourserti4?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">PubgTour Serti4</a>
+                   <a class="nav-link" href="/api/maker/pubgtourserti5?apikey=Masukkan_ApikeyNya&text=Yuda" target="_blank">PubgTour Serti5</a>               
+                   </ul>
+                  </li>
+  <li class="dropdown">                        
+                   <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="image"></i><span>ImageEdit Menu</span></a>
+
+                   <ul class="dropdown-menu">
+                  
+                    <a class="nav-link" href="/api/maker/bakar?apikey=Masukkan_ApikeyNya&url=https://i.ibb.co/NFDbMyv/yuda.jpg" target="_blank">Bakar Edit</a>
+                   <a class="nav-link" href="/api/maker/trash?apikey=Masukkan_ApikeyNya&url=https://i.ibb.co/NFDbMyv/yuda.jpg" target="_blank">Trash Edit</a>
+		           <a class="nav-link" href="/api/maker/blur?apikey=Masukkan_ApikeyNya&url=https://i.ibb.co/NFDbMyv/yuda.jpg" target="_blank">Blur Edit </a>
+		           <a class="nav-link" href="/api/maker/invert?apikey=Masukkan_ApikeyNya&url=https://i.ibb.co/NFDbMyv/yuda.jpg" target="_blank">Invert Edit</a>
+		           <a class="nav-link" href="/api/maker/gtav?apikey=Masukkan_ApikeyNya&url=https://i.ibb.co/NFDbMyv/yuda.jpg" target="_blank">GTAV</a>
+                
+                     </ul>
+                  </li>
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="download"></i><span>Media</span></a>
+
+                        <ul class="dropdown-menu">
+
+                           <a class="nav-link" href="/api/download/ig?url=https://www.instagram.com/p/CNtpwxuH5NK/?igshid=g26k5coikzwr&apikey=Masukkan_ApikeyNya" target="_blank">Ig Download</a>
+		           <a class="nav-link" href="/api/download/fb?url=https://www.facebook.com/alanwalkermusic/videos/277641643524720&apikey=Masukkan_ApikeyNya" target="_blank">Facebook Downloader</a>
+
+		           <a class="nav-link" href="/api/download/tiktok?url=https://vt.tiktok.com/ZSJhvu1AE/&apikey=Masukkan_ApikeyNya" target="_blank">Tiktok Downloader</a>
+
+		           <a class="nav-link" href="/api/yt/playmp3?query=Monolog-pamungkas&apikey=Masukkan_ApikeyNya" target="_blank">Ytmp3</a>
+
+		           <a class="nav-link" href="/api/yt/playmp4?query=Monolog-pamungkas&apikey=Masukkan_ApikeyNya" target="_blank">Ytmp4</a>
+
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="umbrella"></i><span>Islami</span></a>
+
+                        <ul class="dropdown-menu">
+
+		           <a class="nav-link" href="/api/hadits?kitab=bukhari&nomor=52&apikey=APIKEY" target="_blank">Hadits Shahih</a>
+
+		           <a class="nav-link" href="/api/quran?surah=1&ayat=2&apikey=APIKEY" target="_blank">Al Qur'an</a>
+
+		           <a class="nav-link" href="/api/muslim/tahlil?apikey=APIKEY" target="_blank">Doa Tahlil</a>
+
+		           <a class="nav-link" href="/api/muslim/wirid?apikey=MASUKAN_APIKEY" target="_blank">Doa Wirid</a>
+
+		           <a class="nav-link" href="/api/muslim/asmaulhusna?apikey=MASUKAN_APIKEY" target="_blank">Asmaul Husna</a>
+
+		           <a class="nav-link" href="/api/muslim/doaharian?apikey=MASUKAN_APIKEY" target="_blank">Doa Harian</a>
+
+		           <a class="nav-link" href="/api/muslim/ayatkursi?apikey=MASUKAN_APIKEY" target="_blank">Ayat Kursi</a>
+
+		           <a class="nav-link" href="/api/kisahnabi?nabi=muhammad&apikey=MASUKAN_APIKEY" target="_blank">Kisah Nabi</a>
+
+		           <a class="nav-link" href="/api/muslim/niatshalat?apikey=MASUKAN_APIKEY" target="_blank">Niat Shalat</a>
+
+		           <a class="nav-link" href="/api/muslim/bacaanshalat?apikey=MASUKAN_APIKEY" target="_blank">Bacaan Shalat</a>
+
+		           <a class="nav-link" href="/api/jadwalshalat?kota=jakartautara&apikey=MASUKAN_APIKEY" target="_blank">Jadwal Shalat</a>
+                           
+			</ul>
+
+                     </li>
+
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="feather"></i><span>Fun & Game</span></a>
+
+                        <ul class="dropdown-menu">
+
+                           <a class="nav-link" href="/api/kuis/caklontong?apikey=APIKEY" target="_blank">Cak Lontong (by Zahir)</a>
+
+                           <a class="nav-link" href="/api/kuis/tebakgambar?apikey=APIKEY" target="_blank">Tebak Gambar (by Zahir)</a>
+
+                           <a class="nav-link" href="/api/kuis/family100?apikey=APIKEY" target="_blank">family100</a>
+
+                           <a class="nav-link" href="/api/kuis/tebakbendera?apikey=APIKEY" target="_blank">tebak bendera</a>
+
+                           <a class="nav-link" href="/api/asupan?apikey=APIKEY" target="_blank">asupan</a>
+
+                           <a class="nav-link" href="/api/cecan?apikey=APIKEY" target="_blank">cecan</a>
+                          
+                           <a class="nav-link" href="/api/cersex?apikey=APIKEY" target="_blank">cersex</a>
+
+                           <a class="nav-link" href="api/simsimi/?text=hai&apikey=APIKEY" target="_blank">SimSimi</a>
+
+                        </ul>
+
+                     </li>
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="zoom-in"></i><span>Stalk</span></a>
+
+                        <ul class="dropdown-menu">
+
+                           <a class="nav-link" href="/api/stalk/tiktok?apikey=Masukkan_ApikeyNya&username=chikakiku" target="_blank">Tiktok</a>
+
+                           <a class="nav-link" href="/api/stalk/ig?apikey=Masukkan_ApikeyNya&username=yuda.dika.12" target="_blank">Instagram</a>
+
+
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="anchor"></i><span>Primbon</span></a>
+
+                        <ul class="dropdown-menu">
+
+	                   <a class="collapse-item" href="/api/random/quotes?apikey=Masukkan_ApikeyNya" target="_blank">Quotes</a>
+
+			             <a class="collapse-item" href="/api/random/quotes/kanye?apikey=Masukkan_ApikeyNya" target="_blank">Quotes kanye<br></a>
+
+	                   <a class="collapse-item" href="/api/gabut?apikey=APIKEY" target="_blank">Gaboet</a>
+
+	                   <a class="collapse-item" href="/api/artinama/?nama=Yuda&apikey=Apikey" target="_blank">Artinama</a>
+
+	                   <a class="collapse-item" href="/api/tanggaljadian/?tgl=30&bln=02&thn=2018&apikey=apikey" target="_blank">Makna Tanggal Jadian</a>
+
+                        </ul>
+
+                     </li>
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="anchor"></i><span>Ucapan/Waktu</span></a>
+
+                        <ul class="dropdown-menu">
+
+	                   <a class="collapse-item" href="/api/ucapan-wib?apikey=YudaXwer" target="_blank">Ucapan Wib</a>
+
+			             <a class="collapse-item" href="/api/ucapan-wita?apikey=YudaXwer" target="_blank">Ucapan Wita<br></a>
+
+	                   <a class="collapse-item" href="/api/ucapan-wit?apikey=" target="_blank">Ucapan Wit</a>
+
+	                   <a class="collapse-item" href="/api/tahunbaru?apikey=YudaXwer" target="_blank">Ucapan Tahun Baru</a>
+
+	                   <a class="collapse-item" href="/api/hitungmundur?apikey=YudaXwer" target="_blank">Hitung Mundur</a>
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="compass"></i><span>News</span></a>
+
+                        <ul class="dropdown-menu">
+
+		           <a class="collapse-item" href="/api/news/cnn?type=JENIS_BERITA&apikey=APIKEY" target="_blank">CNN News</a>
+
+		           <a class="collapse-item" href="/api/news/cnbc?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">CNBC News</a>
+
+		           <a class="collapse-item" href="/api/news/republika?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">Republika News</a>
+
+	    	  	   <a class="collapse-item" href="/api/news/tempo?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">Tempo News</a>
+
+		           <a class="collapse-item" href="/api/news/antara?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">Antara news</a>
+
+		           <a class="collapse-item" href="/api/news/kumparan?type=JENIS_BERITA&apikey=MASUKKAN_APIKEY" target="_blank">Kumparan news</a>
+
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle collapse-item has-dropdown"><i data-feather="image"></i><span>Wallpaper & Image</span></a>
+
+                        <ul class="dropdown-menu">
+
+		           <a class="collapse-item" href="/api/wallpaper/teknologi?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper Teknologi</a>
+
+		           <a class="collapse-item" href="/api/wallpaper/programming?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper Programming</a>
+
+		           <a class="collapse-item" href="/api/wallpaper/cyberspace?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper CyberSpace</a>
+
+		           <a class="collapse-item" href="/api/wallpaper/muslim?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper Muslim</a>
+
+ 		           <a class="collapse-item" href="/api/wallpaper/pegunungan?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper Mountain View</a>
+
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="disc"></i><span>Anime API</span></a>
+
+                        <ul class="dropdown-menu">
+
+		           <a class="collapse-item" href="/api/waifu?apikey=APIKEY" target="_blank">Waifu</a>
+
+		           <a class="collapse-item" href="/api/nekonime?apikey=APIKEY" target="_blank">Nekonime</a>
+
+                           <a class="collapse-item" href="/api/1cak?apikey=APIKEY" target="_blank">Random 1CAK</a>
+
+		           <a class="collapse-item" href="/api/neonimebatch?url=https://neonime.vip/batch/eromanga-sensei-bd-batch-subtitle-indonesia/&apikey=APIKEY" target="_blank">Neonime batch</a>
+
+		           <a class="collapse-item" href="/api/neonime?q=Shizuka&apikey=APIKEY" target="_blank">Neonime search</a>
+
+		           <a class="collapse-item" href="/api/manga?search=kimetsu no yaiba&apikey=APIKEY" target="_blank">Mangga</a>
+
+		           <a class="collapse-item" href="/api/anime/kusonime?search=planetarian&apikey=APIKEY" target="_blank">Kusonime search</a>
+
+                           <a class="collapse-item" href="/api/dewabatch?q=one piece&apikey=APIKEY" target="_blank">Dewabatch</a>
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="sliders"></i><span>Random</span></a>
+
+                        <ul class="dropdown-menu">
+
+
+		           <a class="collapse-item" href="/api/random/meme?apikey=MASUKIN_APIKEY" target="_blank">Meme</a>
+
+		           <a class="collapse-item" href="/api/random/wallpaper?apikey=MASUKIN_APIKEY" target="_blank">Wallpaper</a>
+
+		           <a class="collapse-item" href="/api/nickepep?apikey=MASUKIN_APIKEY" target="_blank">nickepep<br></a>
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="cloud-snow"></i><span>BMKG</span></a>
+
+                        <ul class="dropdown-menu">
+
+		           <a class="collapse-item" href="/api/infogempa?apikey=MASUKAN_APIKEY" target="_blank">Info Gempa</a>
+
+		           <a class="collapse-item" href="/api/cuaca?kabupaten=kab bungo&apikey=MASUKAN_APIKEY" target="_blank">Info Cuaca</a>
+
+		           <a class="collapse-item" href="/api/covidindo?apikey=MASUKAN_APIKEY" target="_blank">Covid Indo</a>
+
+    		           <a class="collapse-item" href="/api/covidworld?apikey=MASUKAN_APIKEY" target="_blank">Covid World</a>
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="flag"></i><span>Education</span></a>
+
+                        <ul class="dropdown-menu">
+
+
+		           <a class="collapse-item" href="/api/wikipedia?search=jembatan&apikey=MASUKAN_APIKEY" target="_blank">Wikipedia</a>
+
+		           <a class="collapse-item" href="/api/kbbi?kata=pohon&apikey=MASUKAN_APIKEY" target="_blank">KBBI</a>
+
+		           <a class="collapse-item" href="/api/gabut?apikey=MASUKAN_APIKEY" target="_blank">Gabut</a>
+
+		           <a class="collapse-item" href="/api/translate?kata=hi&apikey=MASUKAN_APIKEY" target="_blank">Translate</a>
+
+                           <a class="collapse-item" href="/api/brainly?q=cara%20membuat%20Tuhan&apikey=MASUKAN_APIKEY" target="_blank">Brainly</a>
+
+                           <a class="collapse-item" href="/api/kodepos?kota=jakarta&apikey=APIKEY" target="_blank">kodepos</a>
+
+                        </ul>
+
+                     </li>
+
+
+
+                     <li class="dropdown">
+
+                        <a href="/" class="menu-toggle nav-link has-dropdown"><i data-feather="tv"></i><span>Film</span></a>
+
+                        <ul class="dropdown-menu">
+
+		           <a class="collapse-item" href="/api/filmapik/terbaru?apikey=MASUKAN_APIKEY" target="_blank">Film Terbaru (Film Apik)</a>
+
+		           <a class="collapse-item" href="/api/ck21/search?q=dilan&apikey=MASUKAN_APIKEY" target="_blank">Cari Film (Cinema Keren21)</a>
+
+		           <a class="collapse-item" href="/pn21/search?film=dilan&apikey=MASUKAN_APIKEY" target="_blank">Cari Film (Pop CorN21)</a>
+
+		           <a class="collapse-item" href="/api/lk21/search?film=avenger&apikey=MASUKAN_APIKEY" target="_blank">Cari Film (LK21)</a>
+
+		           <a class="collapse-item" href="/api/lk21/terbaru?apikey=MASUKAN_APIKEY" target="_blank">Film Terbaru (LK21)</a>
+
+		           <a class="collapse-item" href="/api/lk21/comingsoon?apikey=MASUKAN_APIKEY" target="_blank">Film Yg Akan Datang (LK21)</a>
+
+		           <a class="collapse-item" href="/api/lk21/tvseries?apikey=MASUKAN_APIKEY" target="_blank">Series TV (LK21)</a>
+
+		           <a class="collapse-item" href="/api/lk21/year?tahun=2021&apikey=MASUKAN_APIKEY" target="_blank">Berdasarkan Tahun (LK21)</a>
+
+		           <a class="collapse-item" href="/api/lk21/country?negara=indonesia&apikey=MASUKAN_APIKEY" target="_blank">Berdasarkan Negara (LK21)</a>
+
+		           <a class="collapse-item" href="/api/lk21/genre?tipe=action&apikey=MASUKAN_APIKEY" target="_blank">Berdasarkan Genre (LK21)</a>
+
+                        </ul>
+
+                     </li>
+
+                    
+
+                     <li class="dropdown">
+
+                        <a href="/" class="menu-toggle nav-link has-dropdown"><i data-feather="phone"></i><span>Spammer</span></a>
+
+                        <ul class="dropdown-menu">
+
+                        	<a class="collapse-item" href="/api/spamcall?number=85671568291&apikey=MASUKAN_APIKEY" target="_blank">Spam Call</a>
+
+                                <a class="collapse-item" href="/api/spamsms?number=085671568291&jumlah=5&apikey=MASUKAN_APIKEY" target="_blank">Spam SMS</a>
+
+                                <a class="collapse-item" href="/api/spamgmail?gmail=testgmail@gmail.com&jumlah=5&apikey=MASUKAN_APIKEY" target="_blank">Spam Gmail</a>
+
+
+
+                        </ul>
+
+                     </li>
+
+
+                           
+                   <li class="dropdown">
+
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="book" aria-hidden="true"></i><span>Other</span></a>
+
+                        <ul class="dropdown-menu">
+
+             <a class="collapse-item" href="/api/infonpm?query=rey-api&hostname=rey&apikey=MASUKAN_APIKEY" target="_blank">Info NPM</a>
+
+            <a class="collapse-item" href="/api/short/tiny?url=google.com&apikey=MASUKAN_APIKEY" target="_blank">Short Link</a>
+
+            <a class="collapse-item" href="/api/drakorasia?search=tale&apikey=MASUKAN_APIKEY" target="_blank">Drakor Asia</a>
+
+            <a class="collapse-item" href="/api/fakedata?country=en&apikey=MASUKAN_APIKEY" target="_blank">Fake Data</a>
+
+            <a class="collapse-item" href="/api/hilih?kata=Yuda ganteng banget&apikey=MASUKAN_APIKEY" target="_blank">Kata Hilih</a>
+
+
+
+                        </ul>
+
+                     </li>
+                       <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <form class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button type="submit" class="btn btn-default btn-round btn-just-icon">
+                  <i class="material-icons">search</i>
+                  <div class="ripple-container"></div>
                 </button>
-                <a class="navbar-brand" href="index.html">Admin Panel</a>
+              </div>
+            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">
+                  <i class="material-icons">dashboard</i>
+                  <p class="d-lg-none d-md-block">
+                    Stats
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="javscript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">notifications</i>
+                  <span class="notification">5</span>
+                  <p class="d-lg-none d-md-block">
+                    Notifikasi
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:void(0)">Update</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Apikey:YudaGans</a>
+                </div>
+              </li>   
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-warning card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">content_copy</i>
+                  </div>
+                  <p class="card-category">Used Space</p>
+                  <h3 class="card-title">49/50
+                    <small>GB</small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons text-warning">warning</i>
+                    <a href="#pablo" class="warning-link">Get More Space...</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul id="active" class="nav navbar-nav side-nav">
-                    <li class="selected"><a href="index.html"><i class="fa fa-bullseye"></i> Dashboard</a></li>
-                    <li><a href="portfolio.html"><i class="fa fa-tasks"></i> Portfolio</a></li>
-                    <li><a href="blog.html"><i class="fa fa-globe"></i> Blog</a></li>
-                    <li><a href="signup.html"><i class="fa fa-list-ol"></i> SignUp</a></li>
-                    <li><a href="register.html"><i class="fa fa-font"></i> Register</a></li>
-                    <li><a href="timeline.html"><i class="fa fa-font"></i> Timeline</a></li>
-                    <li><a href="forms.html"><i class="fa fa-list-ol"></i> Forms</a></li>
-                    <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-                    <li><a href="bootstrap-elements.html"><i class="fa fa-list-ul"></i> Bootstrap Elements</a></li>
-                    <li><a href="bootstrap-grid.html"><i class="fa fa-table"></i> Bootstrap Grid</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right navbar-user">
-                    <li class="dropdown messages-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">2 New Messages</li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="message-preview">
-                                <a href="#">
-                                    <span class="avatar"><i class="fa fa-bell"></i></span>
-                                    <span class="message">Security alert</span>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="#">Go to Inbox <span class="badge">2</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown user-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Steve Miller<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                            <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="divider-vertical"></li>
-                    <li>
-                        <form class="navbar-search">
-                            <input type="text" placeholder="Search" class="form-control">
-                        </form>
-                    </li>
-                </ul>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-success card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">store</i>
+                  </div>
+                  <p class="card-category">Revenue</p>
+                  <h3 class="card-title">$34,245</h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">date_range</i> Last 24 Hours
+                  </div>
+                </div>
+              </div>
             </div>
-        </nav>
-
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Dashboard <small>Statistics and more</small></h1>
-                    <div class="alert alert-dismissable alert-warning">
-                        <button data-dismiss="alert" class="close" type="button">&times;</button>
-                        Welcome to the admin dashboard! Feel free to review all pages and modify the layout to your needs. 
-                        <br />
-                        This theme uses the <a href="https://www.shieldui.com">ShieldUI</a> JavaScript library for the 
-                        additional data visualization and presentation functionality illustrated here.
-                    </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-danger card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">info_outline</i>
+                  </div>
+                  <p class="card-category">Fixed Issues</p>
+                  <h3 class="card-title">75</h3>
                 </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">local_offer</i> Tracked from Github
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Visits Based on a 10 days data</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="shieldui-chart1"></div>
-                        </div>
-                    </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-info card-header-icon">
+                  <div class="card-icon">
+                    <i class="fa fa-twitter"></i>
+                  </div>
+                  <p class="card-category">Followers</p>
+                  <h3 class="card-title">+245</h3>
                 </div>
-                <div class="col-md-4">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-rss"></i> Feed</h3>
-                        </div>
-                        <div class="panel-body feed">
-                            <section class="feed-item">
-                                <div class="icon pull-left">
-                                    <i class="fa fa-comment"></i>
-                                </div>
-                                <div class="feed-item-body">
-                                    <div class="text">
-                                        <a href="#">John Doe</a> commented on <a href="#">What Makes Good Code Good</a>.
-                                    </div>
-                                    <div class="time pull-left">
-                                        3 h
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="feed-item">
-                                <div class="icon pull-left">
-                                    <i class="fa fa-check"></i>
-                                </div>
-                                <div class="feed-item-body">
-                                    <div class="text">
-                                        <a href="#">Merge request #42</a> has been approved by <a href="#">Jessica Lori</a>.
-                                    </div>
-                                    <div class="time pull-left">
-                                        10 h
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="feed-item">
-                                <div class="icon pull-left">
-                                    <i class="fa fa-plus-square-o"></i>
-                                </div>
-                                <div class="feed-item-body">
-                                    <div class="text">
-                                        New user <a href="#">Greg Wilson</a> registered.
-                                    </div>
-                                    <div class="time pull-left">
-                                        Today
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="feed-item">
-                                <div class="icon pull-left">
-                                    <i class="fa fa-bolt"></i>
-                                </div>
-                                <div class="feed-item-body">
-                                    <div class="text">
-                                        Server fail level raises above normal. <a href="#">See logs</a> for details.
-                                    </div>
-                                    <div class="time pull-left">
-                                        Yesterday
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="feed-item">
-                                <div class="icon pull-left">
-                                    <i class="fa fa-archive"></i>
-                                </div>
-                                <div class="feed-item-body">
-                                    <div class="text">
-                                        <a href="#">Database usage report</a> is ready.
-                                    </div>
-                                    <div class="time pull-left">
-                                        Yesterday
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="feed-item">
-                                <div class="icon pull-left">
-                                    <i class="fa fa-shopping-cart"></i>
-                                </div>
-                                <div class="feed-item-body">
-                                    <div class="text">
-                                        <a href="#">Order #233985</a> needs additional processing.
-                                    </div>
-                                    <div class="time pull-left">
-                                        Wednesday
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="feed-item">
-                                <div class="icon pull-left">
-                                    <i class="fa fa-arrow-down"></i>
-                                </div>
-                                <div class="feed-item-body">
-                                    <div class="text">
-                                        <a href="#">Load more...</a>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">update</i> Just Updated
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Traffic Sources One month tracking </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="shieldui-grid1"></div>
-                        </div>
-                    </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Employees Stats</h4>
+                  <p class="card-category">New employees on 15th September, 2016</p>
                 </div>
+                <div class="card-body table-responsive">
+                  <table class="table table-hover">
+                    <thead class="text-warning">
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Salary</th>
+                      <th>Country</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Minerva Hooper</td>
+                        <td>$23,789</td>
+                        <td>Curaçao</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Sage Rodriguez</td>
+                        <td>$56,142</td>
+                        <td>Netherlands</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Philip Chaney</td>
+                        <td>$38,735</td>
+                        <td>Korea, South</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Logins per week</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div id="shieldui-chart2"></div>
-                        </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="card">
+                <div class="card-header card-header-tabs card-header-warning">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <span class="nav-tabs-title">Tasks:</span>
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#profile" data-toggle="tab">
+                            <i class="material-icons">bug_report</i> Bugs
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#messages" data-toggle="tab">
+                            <i class="material-icons">code</i> Website
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#settings" data-toggle="tab">
+                            <i class="material-icons">cloud</i> Server
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-magnet"></i> Server Overview</h3>
-                        </div>
-                        <div class="panel-body">
-                            <ul class="server-stats">
-                                <li>
-                                    <div class="key pull-right">CPU</div>
-                                    <div class="stat">
-                                        <div class="info">60% / 37°C / 3.3 Ghz</div>
-                                        <div class="progress progress-small">
-                                            <div style="width: 70%;" class="progress-bar progress-bar-danger"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="key pull-right">Mem</div>
-                                    <div class="stat">
-                                        <div class="info">29% / 4GB (16 GB)</div>
-                                        <div class="progress progress-small">
-                                            <div style="width: 29%;" class="progress-bar"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="key pull-right">LAN</div>
-                                    <div class="stat">
-                                        <div class="info">6 Mb/s <i class="fa fa-caret-down"></i>&nbsp; 3 Mb/s <i class="fa fa-caret-up"></i></div>
-                                        <div class="progress progress-small">
-                                            <div style="width: 48%;" class="progress-bar progress-bar-inverse"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="card-body">
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="profile">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                            </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-
-                </div>
-                <div class="col-lg-4">
-                    <header>
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a data-toggle="tab" href="#stats">Users</a>
-                            </li>
-                            <li class="">
-                                <a data-toggle="tab" href="#report">Favorites</a>
-                            </li>
-                            <li class="">
-                                <a data-toggle="tab" href="#dropdown1">Commenters</a>
-                            </li>
-                        </ul>
-                    </header>
-                    <div class="body tab-content">
-                        <div class="tab-pane clearfix active" id="stats">
-                            <h5 class="tab-header"><i class="fa fa-calendar-o fa-2x"></i> Last logged-in users</h5>
-                            <ul class="news-list">
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Ivan Gorge</a></div>
-                                        <div class="position">Software Engineer</div>
-                                        <div class="time">Last logged-in: Mar 12, 11:11</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Roman Novak</a></div>
-                                        <div class="position">Product Designer</div>
-                                        <div class="time">Last logged-in: Mar 12, 19:02</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Teras Uotul</a></div>
-                                        <div class="position">Chief Officer</div>
-                                        <div class="time">Last logged-in: Jun 16, 2:34</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Deral Ferad</a></div>
-                                        <div class="position">Financial Assistant</div>
-                                        <div class="time">Last logged-in: Jun 18, 4:20</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Konrad Polerd</a></div>
-                                        <div class="position">Sales Manager</div>
-                                        <div class="time">Last logged-in: Jun 18, 5:13</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" id="report">
-                            <h5 class="tab-header"><i class="fa fa-star fa-2x"></i> Popular contacts</h5>
-                            <ul class="news-list news-list-no-hover">
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Pol Johnsson</a></div>
-                                        <div class="options">
-                                            <button class="btn btn-xs btn-success">
-                                                <i class="fa fa-phone"></i>
-                                                Call
-                                            </button>
-                                            <button class="btn btn-xs btn-warning">
-                                                <i class="fa fa-envelope-o"></i>
-                                                Message
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Terry Garel</a></div>
-                                        <div class="options">
-                                            <button class="btn btn-xs btn-success">
-                                                <i class="fa fa-phone"></i>
-                                                Call
-                                            </button>
-                                            <button class="btn btn-xs btn-warning">
-                                                <i class="fa fa-envelope-o"></i>
-                                                Message
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Eruos Forkal</a></div>
-                                        <div class="options">
-                                            <button class="btn btn-xs btn-success">
-                                                <i class="fa fa-phone"></i>
-                                                Call
-                                            </button>
-                                            <button class="btn btn-xs btn-warning">
-                                                <i class="fa fa-envelope-o"></i>
-                                                Message
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Remus Reier</a></div>
-                                        <div class="options">
-                                            <button class="btn btn-xs btn-success">
-                                                <i class="fa fa-phone"></i>
-                                                Call
-                                            </button>
-                                            <button class="btn btn-xs btn-warning">
-                                                <i class="fa fa-envelope-o"></i>
-                                                Message
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Lover Lund</a></div>
-                                        <div class="options">
-                                            <button class="btn btn-xs btn-success">
-                                                <i class="fa fa-phone"></i>
-                                                Call
-                                            </button>
-                                            <button class="btn btn-xs btn-warning">
-                                                <i class="fa fa-envelope-o"></i>
-                                                Message
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" id="dropdown1">
-                            <h5 class="tab-header"><i class="fa fa-comments fa-2x"></i> Top Commenters</h5>
-                            <ul class="news-list">
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Edin Garey</a></div>
-                                        <div class="comment">
-                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-                                            aut odit aut fugit,sed quia
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Firel Lund</a></div>
-                                        <div class="comment">
-                                            Duis aute irure dolor in reprehenderit in voluptate velit
-                                             esse cillum dolore eu fugiat.
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Jessica Desingter</a></div>
-                                        <div class="comment">
-                                            Excepteur sint occaecat cupidatat non proident, sunt in
-                                             culpa qui officia deserunt.
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Novel Forel</a></div>
-                                        <div class="comment">
-                                            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque.
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fa fa-user fa-4x pull-left"></i>
-                                    <div class="news-item-info">
-                                        <div class="name"><a href="#">Wedol Reier</a></div>
-                                        <div class="comment">
-                                            Laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis
-                                            et quasi.
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="tab-pane" id="messages">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                            </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
+                    <div class="tab-pane" id="settings">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                            </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com">
+                  Creative Tim
+                </a>
+              </li>
+              <li>
+                <a href="https://creative-tim.com/presentation">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="http://blog.creative-tim.com">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="https://www.creative-tim.com/license">
+                  Licenses
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right" id="date">
+            , made with <i class="material-icons">favorite</i> by
+            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer>
+      <script>
+        const x = new Date().getFullYear();
+        let date = document.getElementById('date');
+        date.innerHTML = '&copy; ' + x + date.innerHTML;
+      </script>
     </div>
-    <!-- /#wrapper -->
+  </div>
+  <div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+      <a href="#" data-toggle="dropdown">
+        <i class="fa fa-cog fa-2x"> </i>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="header-title"> Sidebar Filters</li>
+        <li class="adjustments-line">
+          <a href="javascript:void(0)" class="switch-trigger active-color">
+            <div class="badge-colors ml-auto mr-auto">
+              <span class="badge filter badge-purple active" data-color="purple"></span>
+              <span class="badge filter badge-azure" data-color="azure"></span>
+              <span class="badge filter badge-green" data-color="green"></span>
+              <span class="badge filter badge-warning" data-color="orange"></span>
+              <span class="badge filter badge-danger" data-color="danger"></span>
+            </div>
+            <div class="clearfix"></div>
+          </a>
+        </li>
+        <li class="header-title">Images</li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-1.jpg" alt="">
+          </a>
+        </li>
+        <li class="active">
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-2.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-3.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="../assets/img/sidebar-4.jpg" alt="">
+          </a>
+        </li>
+        <li class="button-container">
+          <a href="https://www.creative-tim.com/product/material-dashboard-dark" target="_blank" class="btn btn-primary btn-block">Free Download</a>
+        </li>
+        <!-- <li class="header-title">Want more components?</li>
+            <li class="button-container">
+                <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">
+                  Get the pro version
+                </a>
+            </li> -->
+        <li class="button-container">
+          <a href="https://demos.creative-tim.com/material-dashboard-dark/docs/2.0/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
+            View Documentation
+          </a>
+        </li>
+        <li class="button-container github-star">
+          <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard/tree/dark-edition" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+        </li>
+        <li class="header-title">Thank you for 95 shares!</li>
+        <li class="button-container text-center">
+          <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>
+          <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>
+          <br>
+          <br>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="https://unpkg.com/default-passive-events"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chartist JS -->
+  <script src="../assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/material-dashboard.js?v=2.1.0"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      $().ready(function() {
+        $sidebar = $('.sidebar');
 
-    <script type="text/javascript">
-        jQuery(function ($) {
-            var performance = [12, 43, 34, 22, 12, 33, 4, 17, 22, 34, 54, 67],
-                visits = [123, 323, 443, 32],
-                traffic = [
-                {
-                    Source: "Direct", Amount: 323, Change: 53, Percent: 23, Target: 600
-                },
-                {
-                    Source: "Refer", Amount: 345, Change: 34, Percent: 45, Target: 567
-                },
-                {
-                    Source: "Social", Amount: 567, Change: 67, Percent: 23, Target: 456
-                },
-                {
-                    Source: "Search", Amount: 234, Change: 23, Percent: 56, Target: 890
-                },
-                {
-                    Source: "Internal", Amount: 111, Change: 78, Percent: 12, Target: 345
-                }];
+        $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+        $full_page = $('.full-page');
+
+        $sidebar_responsive = $('body > .navbar-collapse');
+
+        window_width = $(window).width();
+
+        $('.fixed-plugin a').click(function(event) {
+          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+          if ($(this).hasClass('switch-trigger')) {
+            if (event.stopPropagation) {
+              event.stopPropagation();
+            } else if (window.event) {
+              window.event.cancelBubble = true;
+            }
+          }
+        });
+
+        $('.fixed-plugin .active-color span').click(function() {
+          $full_page_background = $('.full-page-background');
+
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-color', new_color);
+          }
+
+          if ($full_page.length != 0) {
+            $full_page.attr('filter-color', new_color);
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.attr('data-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .background-color .badge').click(function() {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('background-color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-background-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .img-holder').click(function() {
+          $full_page_background = $('.full-page-background');
+
+          $(this).parent('li').siblings().removeClass('active');
+          $(this).parent('li').addClass('active');
 
 
-            $("#shieldui-chart1").shieldChart({
-                theme: "dark",
+          var new_image = $(this).find("img").attr('src');
 
-                primaryHeader: {
-                    text: "Visitors"
-                },
-                exportOptions: {
-                    image: false,
-                    print: false
-                },
-                dataSeries: [{
-                    seriesType: "area",
-                    collectionAlias: "Q Data",
-                    data: performance
-                }]
+          if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            $sidebar_img_container.fadeOut('fast', function() {
+              $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+              $sidebar_img_container.fadeIn('fast');
             });
+          }
 
-            $("#shieldui-chart2").shieldChart({
-                theme: "dark",
-                primaryHeader: {
-                    text: "Traffic Per week"
-                },
-                exportOptions: {
-                    image: false,
-                    print: false
-                },
-                dataSeries: [{
-                    seriesType: "pie",
-                    collectionAlias: "traffic",
-                    data: visits
-                }]
+          if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+            $full_page_background.fadeOut('fast', function() {
+              $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+              $full_page_background.fadeIn('fast');
             });
+          }
 
-            $("#shieldui-grid1").shieldGrid({
-                dataSource: {
-                    data: traffic
-                },
-                sorting: {
-                    multiple: true
-                },
-                rowHover: false,
-                paging: false,
-                columns: [
-                { field: "Source", width: "170px", title: "Source" },
-                { field: "Amount", title: "Amount" },                
-                { field: "Percent", title: "Percent", format: "{0} %" },
-                { field: "Target", title: "Target" },
-                ]
-            });            
-        });        
-    </script>
+          if ($('.switch-sidebar-image input:checked').length == 0) {
+            var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+          }
+        });
+
+        $('.switch-sidebar-image input').change(function() {
+          $full_page_background = $('.full-page-background');
+
+          $input = $(this);
+
+          if ($input.is(':checked')) {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar_img_container.fadeIn('fast');
+              $sidebar.attr('data-image', '#');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page_background.fadeIn('fast');
+              $full_page.attr('data-image', '#');
+            }
+
+            background_image = true;
+          } else {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar.removeAttr('data-image');
+              $sidebar_img_container.fadeOut('fast');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page.removeAttr('data-image', '#');
+              $full_page_background.fadeOut('fast');
+            }
+
+            background_image = false;
+          }
+        });
+
+        $('.switch-sidebar-mini input').change(function() {
+          $body = $('body');
+
+          $input = $(this);
+
+          if (md.misc.sidebar_mini_active == true) {
+            $('body').removeClass('sidebar-mini');
+            md.misc.sidebar_mini_active = false;
+
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+          } else {
+
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+
+            setTimeout(function() {
+              $('body').addClass('sidebar-mini');
+
+              md.misc.sidebar_mini_active = true;
+            }, 300);
+          }
+
+          // we simulate the window Resize so the charts will get updated in realtime.
+          var simulateWindowResize = setInterval(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 180);
+
+          // we stop the simulation of Window Resize after the animations are completed
+          setTimeout(function() {
+            clearInterval(simulateWindowResize);
+          }, 1000);
+
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+    });
+  </script>
 </body>
+
 </html>
