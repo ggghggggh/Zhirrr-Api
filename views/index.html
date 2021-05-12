@@ -1,937 +1,871 @@
+<!--
+=========================================================
+* Material Dashboard Dark Edition - v2.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-dark
+* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+
+* Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-   <title>Quantum Able Bootstrap 4 Admin Dashboard Template</title>
-   <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
-   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-   <!--[if lt IE 9]>
-     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-     <![endif]-->
-
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-   <!-- Favicon icon -->
-   <link rel="shortcut icon" href="https://technext.github.io/quantum_able/assets/images/favicon.png" type="image/x-icon">
-   <link rel="icon" href="https://technext.github.io/quantum_able/assets/images/favicon.ico" type="image/x-icon">
-
-   <!-- Google font-->
-   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
-
-   <!-- themify -->
-   <link rel="stylesheet" type="text/css" href="https://technext.github.io/quantum_able/assets/icon/themify-icons/themify-icons.css">
-
-   <!-- iconfont -->
-   <link rel="stylesheet" type="text/css" href="https://technext.github.io/quantum_able/assets/icon/icofont/css/icofont.css">
-
-   <!-- simple line icon -->
-   <link rel="stylesheet" type="text/css" href="https://technext.github.io/quantum_able/assets/icon/simple-line-icons/css/simple-line-icons.css">
-
-   <!-- Required Fremwork -->
-   <link rel="stylesheet" type="text/css" href="https://technext.github.io/quantum_able/assets/plugins/bootstrap/css/bootstrap.min.css">
-
-   <!-- Chartlist chart css -->
-   <link rel="stylesheet" href="https://technext.github.io/quantum_able/assets/plugins/chartist/dist/chartist.css" type="text/css" media="all">
-
-   <!-- Weather css -->
-   <link href="https://technext.github.io/quantum_able/assets/css/svg-weather.css" rel="stylesheet">
-
-
-   <!-- Style.css -->
-   <link rel="stylesheet" type="text/css" href="https://technext.github.io/quantum_able/assets/css/main.css">
-
-   <!-- Responsive.css-->
-   <link rel="stylesheet" type="text/css" href="https://technext.github.io/quantum_able/assets/css/responsive.css">
-
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Material Dashboard Dark Edition by Creative Tim
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/demo/demo.css" rel="stylesheet" />
 </head>
 
-<body class="sidebar-mini fixed">
-   <div class="loader-bg">
-      <div class="loader-bar">
-      </div>
-   </div>
-   <div class="wrapper">
-      <!-- Navbar-->
-      <header class="main-header-top hidden-print">
-         <a href="index.html" class="logo"><img class="img-fluid able-logo" src="https://technext.github.io/quantum_able/assets/images/logo.png" alt="Theme-logo"></a>
-         <nav class="navbar navbar-static-top">
-            <!-- Sidebar toggle button-->
-            <a href="#!" data-toggle="offcanvas" class="sidebar-toggle"></a>
-            <ul class="top-nav lft-nav">
-               <li>
-                  <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                     <i class="ti-files"> </i><span> Files</span>
-                  </a>
-               </li>               
-               <li class="dropdown">
-                  <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                     <span>Dropdown </span><i class=" icofont icofont-simple-down"></i>
-                  </a>
-                  <ul class="dropdown-menu settings-menu">
-                     <li><a href="#">List item 1</a></li>
-                     <li><a href="#">List item 2</a></li>
-                     <li><a href="#">List item 3</a></li>
-                     <li><a href="#">List item 4</a></li>
-                     <li><a href="#">List item 5</a></li>
-                  </ul>
-               </li>
-               <li class="dropdown pc-rheader-submenu message-notification search-toggle">
-                  <a href="#!" id="morphsearch-search" class="drop icon-circle txt-white">
-                     <i class="ti-search"></i>
-                  </a>
-               </li>
-            </ul>
-            <!-- Navbar Right Menu-->
-            <div class="navbar-custom-menu f-right">
-              <div class="upgrade-button">
-                <a href="#" class="icon-circle txt-white btn btn-sm btn-primary upgrade-button">
-                    <span>Upgrade To Pro</span>
+<body class="dark-edition">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="black" data-image="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/img/sidebar-2.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Creative Tim
+        </a></div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="./dashboard.html">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./user.html">
+              <i class="material-icons">person</i>
+              <p>User Profile</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./tables.html">
+              <i class="material-icons">content_paste</i>
+              <p>Table List</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./typography.html">
+              <i class="material-icons">library_books</i>
+              <p>Typography</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./icons.html">
+              <i class="material-icons">bubble_chart</i>
+              <p>Icons</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./map.html">
+              <i class="material-icons">location_ons</i>
+              <p>Maps</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./notifications.html">
+              <i class="material-icons">notifications</i>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <!-- <li class="nav-item active-pro ">
+                <a class="nav-link" href="./upgrade.html">
+                    <i class="material-icons">unarchive</i>
+                    <p>Upgrade to PRO</p>
                 </a>
-              </div>
-
-               <ul class="top-nav">
-                  <!--Notification Menu-->
-                    
-                  <li class="dropdown notification-menu">
-                     <a href="#!" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
-                        <i class="icon-bell"></i>
-                        <span class="badge badge-danger header-badge">9</span>
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li class="not-head">You have <b class="text-primary">4</b> new notifications.</li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media">
-                              <span class="media-left media-icon">
-                    <img class="img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="User Image">
-                  </span>
-                              <div class="media-body"><span class="block">Lisa sent you a mail</span><span class="text-muted block-time">2min ago</span></div>
-                           </a>
-                        </li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media">
-                              <span class="media-left media-icon">
-                    <img class="img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-2.png" alt="User Image">
-                  </span>
-                              <div class="media-body"><span class="block">Server Not Working</span><span class="text-muted block-time">20min ago</span></div>
-                           </a>
-                        </li>
-                        <li class="bell-notification">
-                           <a href="javascript:;" class="media"><span class="media-left media-icon">
-                    <img class="img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-3.png" alt="User Image">
-                  </span>
-                                    <div class="media-body"><span class="block">Transaction xyz complete</span><span class="text-muted block-time">3 hours ago</span></div></a>
-                        </li>
-                        <li class="not-footer">
-                           <a href="#!">See all notifications.</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <!-- chat dropdown -->
-                  <li class="pc-rheader-submenu ">
-                     <a href="#!" class="drop icon-circle displayChatbox">
-                        <i class="icon-bubbles"></i>
-                        <span class="badge badge-danger header-badge">5</span>
-                     </a>
-
-                  </li>
-                  <!-- window screen -->
-                  <li class="pc-rheader-submenu">
-                     <a href="#!" class="drop icon-circle" onclick="javascript:toggleFullScreen()">
-                        <i class="icon-size-fullscreen"></i>
-                     </a>
-
-                  </li>
-                  <!-- User Menu-->
-                  <li class="dropdown">
-                     <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
-                        <span><img class="img-circle " src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" style="width:40px;" alt="User Image"></span>
-                        <span>John <b>Doe</b> <i class=" icofont icofont-simple-down"></i></span>
-
-                     </a>
-                     <ul class="dropdown-menu settings-menu">
-                        <li><a href="#!"><i class="icon-settings"></i> Settings</a></li>
-                        <li><a href="#"><i class="icon-user"></i> Profile</a></li>
-                        <li><a href="#"><i class="icon-envelope-open"></i> My Messages</a></li>
-                        <li class="p-0">
-                           <div class="dropdown-divider m-0"></div>
-                        </li>
-                        <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li>
-                        <li><a href="login1.html"><i class="icon-logout"></i> Logout</a></li>
-
-                     </ul>
-                  </li>
-               </ul>
-
-               <!-- search -->
-               <div id="morphsearch" class="morphsearch">
-                  <form class="morphsearch-form">
-
-                     <input class="morphsearch-input" type="search" placeholder="Search..." />
-
-                     <button class="morphsearch-submit" type="submit">Search</button>
-
-                  </form>
-                  <div class="morphsearch-content">
-                     <div class="dummy-column">
-                        <h2>People</h2>
-                        <a class="dummy-media-object" href="#!">
-                           <img class="round" src="http://0.gravatar.com/avatar/81b58502541f9445253f30497e53c280?s=50&d=identicon&r=G" alt="Sara Soueidan" />
-                           <h3>Sara Soueidan</h3>
-                        </a>
-
-                        <a class="dummy-media-object" href="#!">
-                           <img class="round" src="http://1.gravatar.com/avatar/9bc7250110c667cd35c0826059b81b75?s=50&d=identicon&r=G" alt="Shaun Dona" />
-                           <h3>Shaun Dona</h3>
-                        </a>
-                     </div>
-                     <div class="dummy-column">
-                        <h2>Popular</h2>
-                        <a class="dummy-media-object" href="#!">
-                           <img src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="PagePreloadingEffect" />
-                           <h3>Page Preloading Effect</h3>
-                        </a>
-
-                        <a class="dummy-media-object" href="#!">
-                           <img src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="DraggableDualViewSlideshow" />
-                           <h3>Draggable Dual-View Slideshow</h3>
-                        </a>
-                     </div>
-                     <div class="dummy-column">
-                        <h2>Recent</h2>
-                        <a class="dummy-media-object" href="#!">
-                           <img src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="TooltipStylesInspiration" />
-                           <h3>Tooltip Styles Inspiration</h3>
-                        </a>
-                        <a class="dummy-media-object" href="#!">
-                           <img src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="NotificationStyles" />
-                           <h3>Notification Styles Inspiration</h3>
-                        </a>
-                     </div>
-                  </div>
-                  <!-- /morphsearch-content -->
-                  <span class="morphsearch-close"><i class="icofont icofont-search-alt-1"></i></span>
-               </div>
-               <!-- search end -->
-            </div>
-         </nav>
-      </header>
-      <!-- Side-Nav-->
-      <aside class="main-sidebar hidden-print ">
-         <section class="sidebar" id="sidebar-scroll">
-            <!-- Sidebar Menu-->
-            <ul class="sidebar-menu">
-                <li class="nav-level">--- Navigation</li>
-                <li class="active treeview">
-                    <a class="waves-effect waves-dark" href="index.html">
-                        <i class="icon-speedometer"></i><span> Dashboard</span>
-                    </a>                
-                </li>
-                <li class="nav-level">--- Components</li>
-                <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-briefcase"></i><span> UI Elements</span><i class="icon-arrow-down"></i></a>
-                    <ul class="treeview-menu">
-                        <li><a class="waves-effect waves-dark" href="accordion.html"><i class="icon-arrow-right"></i> Accordion</a></li>
-                        <li><a class="waves-effect waves-dark" href="button.html"><i class="icon-arrow-right"></i> Button</a></li>
-                        <li><a class="waves-effect waves-dark" href="label-badge.html"><i class="icon-arrow-right"></i> Label Badge</a></li>
-                        <li><a class="waves-effect waves-dark" href="bootstrap-ui.html"><i class="icon-arrow-right"></i> Grid system</a></li>
-                        <li><a class="waves-effect waves-dark" href="box-shadow.html"><i class="icon-arrow-right"></i> Box Shadow</a></li>
-                        <li><a class="waves-effect waves-dark" href="color.html"><i class="icon-arrow-right"></i> Color</a></li>
-                        <li><a class="waves-effect waves-dark" href="light-box.html"><i class="icon-arrow-right"></i> Light Box</a></li>
-                        <li><a class="waves-effect waves-dark" href="notification.html"><i class="icon-arrow-right"></i> Notification</a></li>
-                        <li><a class="waves-effect waves-dark" href="panels-wells.html"><i class="icon-arrow-right"></i> Panels-Wells</a></li>
-                        <li><a class="waves-effect waves-dark" href="tabs.html"><i class="icon-arrow-right"></i> Tabs</a></li>
-                        <li><a class="waves-effect waves-dark" href="tooltips.html"><i class="icon-arrow-right"></i> Tooltips</a></li>
-                        <li><a class="waves-effect waves-dark" href="typography.html"><i class="icon-arrow-right"></i> Typography</a></li>
-                    </ul>
-                </li>
-
-                <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-chart"></i><span> Charts &amp; Maps</span><span class="label label-success menu-caption">New</span><i class="icon-arrow-down"></i></a>
-                    <ul class="treeview-menu">
-                        <li><a class="waves-effect waves-dark" href="float-chart.html"><i class="icon-arrow-right"></i> Float Charts</a></li>
-                        <li><a class="waves-effect waves-dark" href="morris-chart.html"><i class="icon-arrow-right"></i> Morris Charts</a></li>
-                    </ul>
-                </li>
-
-                <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-book-open"></i><span> Forms</span><i class="icon-arrow-down"></i></a>
-                    <ul class="treeview-menu">
-                        <li><a class="waves-effect waves-dark" href="form-elements-bootstrap.html"><i class="icon-arrow-right"></i> Form Elements Bootstrap</a></li>
-                        
-                        <li><a class="waves-effect waves-dark" href="form-elements-advance.html"><i class="icon-arrow-right"></i> Form Elements Advance</a></li>
-                    </ul>
-                </li>
-                
-                <li class="treeview">
-                    <a class="waves-effect waves-dark" href="basic-table.html">
-                        <i class="icon-list"></i><span> Table</span>
-                    </a>                
-                </li>
-
-
-                <li class="nav-level">--- More</li>
-
-                <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-docs"></i><span>Pages</span><i class="icon-arrow-down"></i></a>
-                    <ul class="treeview-menu">
-                        <li class="treeview"><a href="#!"><i class="icon-arrow-right"></i><span> Authentication</span><i class="icon-arrow-down"></i></a>
-                            <ul class="treeview-menu">
-                                <li><a class="waves-effect waves-dark" href="register1.html" target="_blank"><i class="icon-arrow-right"></i> Register 1</a></li>
-                                
-                                <li><a class="waves-effect waves-dark" href="login1.html" target="_blank"><i class="icon-arrow-right"></i><span> Login 1</span></a></li>
-                                <li><a class="waves-effect waves-dark" href="forgot-password.html" target="_blank"><i class="icon-arrow-right"></i><span> Forgot Password</span></a></li>
-                                
-                            </ul>
-                        </li>
-                        
-                        <li><a class="waves-effect waves-dark" href="404.html" target="_blank"><i class="icon-arrow-right"></i> Error 404</a></li>
-                        <li><a class="waves-effect waves-dark" href="sample-page.html"><i class="icon-arrow-right"></i> Sample Page</a></li>
-                        
-                    </ul>
-                </li>
-
-
-                <li class="nav-level">--- Menu Level</li>
-
-                <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icofont icofont-company"></i><span>Menu Level 1</span><i class="icon-arrow-down"></i></a>
-                    <ul class="treeview-menu">
-                        <li>
-                            <a class="waves-effect waves-dark" href="#!">
-                                <i class="icon-arrow-right"></i>
-                                Level Two
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a class="waves-effect waves-dark" href="#!">
-                                <i class="icon-arrow-right"></i>
-                                <span>Level Two</span>
-                                <i class="icon-arrow-down"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li>
-                                    <a class="waves-effect waves-dark" href="#!">
-                                        <i class="icon-arrow-right"></i>
-                                        Level Three
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="waves-effect waves-dark" href="#!">
-                                        <i class="icon-arrow-right"></i>
-                                        <span>Level Three</span>
-                                        <i class="icon-arrow-down"></i>
-                                    </a>
-                                    <ul class="treeview-menu">
-                                        <li>
-                                            <a class="waves-effect waves-dark" href="#!">
-                                                <i class="icon-arrow-right"></i>
-                                                Level Four
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="waves-effect waves-dark" href="#!">
-                                                <i class="icon-arrow-right"></i>
-                                                Level Four
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-         </section>
-      </aside>
-      <!-- Sidebar chat start -->
-      <div id="sidebar" class="p-fixed header-users showChat">
-         <div class="had-container">
-            <div class="card card_main header-users-main">
-               <div class="card-content user-box">
-                  <div class="md-group-add-on p-20">
-                     <span class="md-add-on">
-                                    <i class="icofont icofont-search-alt-2 chat-search"></i>
-                                 </span>
-                     <div class="md-input-wrapper">
-                        <input type="text" class="md-form-control" name="username" id="search-friends">
-                        <label>Search</label>
-                     </div>
-
-                  </div>
-                  <div class="media friendlist-main">
-
-                     <h6>Friend List</h6>
-
-                  </div>
-                  <div class="main-friend-list">
-                     <div class="media friendlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
-
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Josephin Doe</div>
-                           <span>20min ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-2.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Alice</div>
-                           <span>1 hour ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="7" data-status="offline" data-username="Michael Scofield" data-toggle="tooltip" data-placement="left" title="Michael Scofield">
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-3.png" alt="Generic placeholder image">
-                           <div class="live-status bg-danger"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Michael Scofield</div>
-                           <span>3 hours ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="5" data-status="online" data-username="Irina Shayk" data-toggle="tooltip" data-placement="left" title="Irina Shayk">
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-4.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Irina Shayk</div>
-                           <span>1 day ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="6" data-status="offline" data-username="Sara Tancredi" data-toggle="tooltip" data-placement="left" title="Sara Tancredi">
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-5.png" alt="Generic placeholder image">
-                           <div class="live-status bg-danger"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Sara Tancredi</div>
-                           <span>2 days ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Josephin Doe</div>
-                           <span>20min ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-2.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Alice</div>
-                           <span>1 hour ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
-
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Josephin Doe</div>
-                           <span>20min ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-2.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Alice</div>
-                           <span>1 hour ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
-
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Josephin Doe</div>
-                           <span>20min ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-2.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Alice</div>
-                           <span>1 hour ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
-
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Josephin Doe</div>
-                           <span>20min ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
-
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Josephin Doe</div>
-                           <span>20min ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
-
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Josephin Doe</div>
-                           <span>20min ago</span>
-                        </div>
-                     </div>
-                     <div class="media friendlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
-
-                        <a class="media-left" href="#!">
-                           <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-                           <div class="live-status bg-success"></div>
-                        </a>
-                        <div class="media-body">
-                           <div class="friend-header">Josephin Doe</div>
-                           <span>20min ago</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-
+            </li> -->
+        </ul>
       </div>
-      <div class="showChat_inner">
-         <div class="media chat-inner-header">
-            <a class="back_chatBox">
-               <i class="icofont icofont-rounded-left"></i> Josephin Doe
-            </a>
-         </div>
-         <div class="media chat-messages">
-            <a class="media-left photo-table" href="#!">
-               <img class="media-object img-circle m-t-5" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="Generic placeholder image">
-               <div class="live-status bg-success"></div>
-            </a>
-            <div class="media-body chat-menu-content">
-               <div class="">
-                  <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
-                  <p class="chat-time">8:20 a.m.</p>
-               </div>
-            </div>
-         </div>
-         <div class="media chat-messages">
-            <div class="media-body chat-menu-reply">
-               <div class="">
-                  <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
-                  <p class="chat-time">8:20 a.m.</p>
-               </div>
-            </div>
-            <div class="media-right photo-table">
-               <a href="#!">
-                  <img class="media-object img-circle m-t-5" src="https://technext.github.io/quantum_able/assets/images/avatar-2.png" alt="Generic placeholder image">
-                  <div class="live-status bg-success"></div>
-               </a>
-            </div>
-         </div>
-         <div class="media chat-reply-box">
-            <div class="md-input-wrapper">
-               <input type="text" class="md-form-control" id="inputEmail" name="inputEmail">
-               <label>Share your thoughts</label>
-               <span class="highlight"></span>
-               <span class="bar"></span> <button type="button" class="chat-send waves-effect waves-light">
-                     <i class="icofont icofont-location-arrow f-20 "></i>
-                 </button>
-
-               <button type="button" class="chat-send waves-effect waves-light">
-                    <i class="icofont icofont-location-arrow f-20 "></i>
-                </button>
-            </div>
-
-         </div>
-      </div>
-      <!-- Sidebar chat end-->
-      <div class="content-wrapper">
-         <!-- Container-fluid starts -->
-         <!-- Main content starts -->
-         <div class="container-fluid">
-            <div class="row">
-               <div class="main-header">
-                  <h4>Dashboard</h4>
-               </div>
-            </div>
-            <!-- 4-blocks row start -->
-            <div class="row dashboard-header">
-               <div class="col-lg-3 col-md-6">
-                  <div class="card dashboard-product">
-                     <span>Products</span>
-                     <h2 class="dashboard-total-products">4500</h2>
-                     <span class="label label-warning">Sales</span>Arriving Today
-                     <div class="side-box">
-                        <i class="ti-signal text-warning-color"></i>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6">
-                  <div class="card dashboard-product">
-                     <span>Products</span>
-                     <h2 class="dashboard-total-products">37,500</h2>
-                     <span class="label label-primary">Views</span>View Today
-                     <div class="side-box ">
-                        <i class="ti-gift text-primary-color"></i>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6">
-                  <div class="card dashboard-product">
-                     <span>Products</span>
-                     <h2 class="dashboard-total-products">$<span>30,780</span></h2>
-                     <span class="label label-success">Sales</span>Reviews
-                     <div class="side-box">
-                        <i class="ti-direction-alt text-success-color"></i>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6">
-                  <div class="card dashboard-product">
-                     <span>Products</span>
-                     <h2 class="dashboard-total-products">$<span>30,780</span></h2>
-                     <span class="label label-danger">Sales</span>Reviews
-                     <div class="side-box">
-                        <i class="ti-rocket text-danger-color"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- 4-blocks row end -->
-
-            <!-- 1-3-block row start -->
-            <div class="row">
-               <div class="col-lg-4">
-                  <div class="card">
-                     <div class="user-block-2">
-                        <img class="img-fluid" src="https://technext.github.io/quantum_able/assets/images/widget/user-1.png" alt="user-header">
-                        <h5>Josephin Villa</h5>
-                        <h6>Software Engineer</h6>
-                     </div>
-                     <div class="card-block">
-                        <div class="user-block-2-activities">
-                           <div class="user-block-2-active">
-                              <i class="icofont icofont-clock-time"></i> Recent Activities
-                              <label class="label label-primary">480</label>
-                           </div>
-                        </div>
-                        <div class="user-block-2-activities">
-                           <div class="user-block-2-active">
-                              <i class="icofont icofont-users"></i> Current Employees
-                              <label class="label label-primary">390</label>
-                           </div>
-                        </div>
-
-                        <div class="user-block-2-activities">
-                           <div class="user-block-2-active">
-                              <i class="icofont icofont-ui-user"></i> Following
-                              <label class="label label-primary">485</label>
-                           </div>
-
-                        </div>
-                        <div class="user-block-2-activities">
-                           <div class="user-block-2-active">
-                              <i class="icofont icofont-picture"></i> Pictures
-                              <label class="label label-primary">506</label>
-                           </div>
-                        </div>
-                        <div class="text-center">
-                           <button type="button" class="btn btn-warning waves-effect waves-light text-uppercase m-r-30">
-                                    Follows
-                                </button>
-                           <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase">
-                                    Message
-                                </button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-8">
-                  <div class="card">
-                     <div class="card-header">
-                        <h5 class="card-header-text">Bar chart</h5>
-                     </div>
-                     <div class="card-block">
-                        <div id="barchart" style="min-width: 250px; height: 330px; margin: 0 auto"></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-12 grid-item">
-                  <div class="card">
-                     <div class="card-block horizontal-card-img d-flex">
-                        <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-3.png" alt="Generic placeholder image">
-                        <div class="d-inlineblock  p-l-20">
-                          <h6>Josephin Doe</h6>
-                          <a href="#">contact@admin.com</a>
-                       </div>
-                        <h6 class="txt-warning rotate-txt">Designer</h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-12 grid-item">
-                  <div class="card">
-                     <div class="card-block horizontal-card-img d-flex">
-                        <img class="media-object img-circle" src="https://technext.github.io/quantum_able/assets/images/lockscreen.png" alt="Generic placeholder image">
-                        <div class="d-inlineblock  p-l-20">
-                          <h6>Josephin Doe</h6>
-                          <a href="#">contact@admin.com</a>
-                       </div>
-                        <h6 class="txt-danger rotate-txt">Developer</h6>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- 1-3-block row end -->
-
-            <!-- 2-1 block start -->
-            <div class="row">
-               <div class="col-xl-8 col-lg-12">
-                  <div class="card">
-                     <div class="card-block">
-                        <div class="table-responsive">
-                           <table class="table m-b-0 photo-table">
-                              <thead>
-                                 <tr class="text-uppercase">
-                                    <th>Photo</th>
-                                    <th>Project</th>
-                                    <th>Completed</th>
-                                    <th>Status</th>
-                                    <th>Date</th>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr>
-                                    <th>
-                                       <img class="img-fluid img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-2.png" alt="User">
-                                    </th>
-                                    <td>Appestia Project
-                                       <p><i class="icofont icofont-clock-time"></i>Created 14.9.2016</p>
-                                    </td>
-                                    <td>
-                                       <span class="pie" style="display: none;">226,134</span><svg class="peity" height="30" width="30"><path d="M 15.000000000000002 0 A 15 15 0 1 1 4.209902994920235 25.41987555688496 L 15 15" fill="#2196F3"></path><path d="M 4.209902994920235 25.41987555688496 A 15 15 0 0 1 14.999999999999996 0 L 15 15" fill="#ccc"></path></svg>
-                                    </td>
-                                    <td>50%</td>
-                                    <td>October 21, 2015</td>
-                                 </tr>
-                                 <tr>
-                                    <th>
-                                       <img class="img-fluid img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-4.png" alt="User">
-                                    </th>
-                                    <td>Contract with belife Company
-                                       <p><i class="icofont icofont-clock-time"></i>Created 20.10.2016</p>
-                                    </td>
-                                    <td>
-                                       <span class="pie" style="display: none;">0.52/1.561</span><svg class="peity" height="30" width="30"><path d="M 15.000000000000002 0 A 15 15 0 0 1 28.00043211809656 22.482564048691025 L 15 15" fill="#2196F3"></path><path d="M 28.00043211809656 22.482564048691025 A 15 15 0 1 1 14.999999999999996 0 L 15 15" fill="#ccc"></path></svg>
-                                    </td>
-                                    <td>70%</td>
-                                    <td>November 21, 2015</td>
-                                 </tr>
-                                 <tr>
-                                    <th>
-                                       <img class="img-fluid img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="User">
-                                    </th>
-                                    <td>Web Consultancy project
-                                       <p><i class="icofont icofont-clock-time"></i>Created 20.10.2016</p>
-                                    </td>
-                                    <td>
-                                       <span class="pie" style="display: none;">1,4</span><svg class="peity" height="30" width="30"><path d="M 15.000000000000002 0 A 15 15 0 0 1 29.265847744427305 10.36474508437579 L 15 15" fill="#2196F3"></path><path d="M 29.265847744427305 10.36474508437579 A 15 15 0 1 1 14.999999999999996 0 L 15 15" fill="#ccc"></path></svg>
-                                    </td>
-                                    <td>40%</td>
-                                    <td>September 21, 2015</td>
-                                 </tr>
-                                 <tr>
-                                    <th>
-                                       <img class="img-fluid img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-3.png" alt="User">
-                                    </th>
-                                    <td>Contract with belife Company
-                                       <p><i class="icofont icofont-clock-time"></i>Created 20.10.2016</p>
-                                    </td>
-                                    <td>
-                                       <span class="pie" style="display: none;">0.52/1.561</span><svg class="peity" height="30" width="30"><path d="M 15.000000000000002 0 A 15 15 0 0 1 28.00043211809656 22.482564048691025 L 15 15" fill="#2196F3"></path><path d="M 28.00043211809656 22.482564048691025 A 15 15 0 1 1 14.999999999999996 0 L 15 15" fill="#ccc"></path></svg>
-                                    </td>
-                                    <td>70%</td>
-                                    <td>November 21, 2015</td>
-                                 </tr>
-                                 <tr>
-                                    <th>
-                                       <img class="img-fluid img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-1.png" alt="User">
-                                    </th>
-                                    <td>Contract with belife Company
-                                       <p><i class="icofont icofont-clock-time"></i>Created 20.10.2016</p>
-                                    </td>
-                                    <td>
-                                       <span class="pie" style="display: none;">0.52/1.561</span><svg class="peity" height="30" width="30"><path d="M 15.000000000000002 0 A 15 15 0 0 1 28.00043211809656 22.482564048691025 L 15 15" fill="#2196F3"></path><path d="M 28.00043211809656 22.482564048691025 A 15 15 0 1 1 14.999999999999996 0 L 15 15" fill="#ccc"></path></svg>
-                                    </td>
-                                    <td>70%</td>
-                                    <td>November 21, 2015</td>
-                                 </tr>
-                                 <tr>
-                                    <th>
-                                       <img class="img-fluid img-circle" src="https://technext.github.io/quantum_able/assets/images/avatar-2.png" alt="User">
-                                    </th>
-                                    <td>Contract with belife Company
-                                       <p><i class="icofont icofont-clock-time"></i>Created 20.10.2016</p>
-                                    </td>
-                                    <td>
-                                       <span class="pie" style="display: none;">0.52/1.561</span><svg class="peity" height="30" width="30"><path d="M 15.000000000000002 0 A 15 15 0 0 1 28.00043211809656 22.482564048691025 L 15 15" fill="#2196F3"></path><path d="M 28.00043211809656 22.482564048691025 A 15 15 0 1 1 14.999999999999996 0 L 15 15" fill="#ccc"></path></svg>
-                                    </td>
-                                    <td>70%</td>
-                                    <td>November 21, 2015</td>
-                                 </tr>
-
-                              </tbody>
-                           </table>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-4 col-lg-12">
-                  <div class="card">
-                     <div class="card-header">
-                        <h5 class="card-header-text">Bar chart</h5>
-                     </div>
-                     <div class="card-block">
-                        <div id="piechart" style="min-width: 250px; height: 460px; margin: 0 auto"></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- 2-1 block end -->
-         </div>
-         <!-- Main content ends -->
-         <!-- Container-fluid ends -->
-         <div class="fixed-button">
-            <a href="#!" class="btn btn-md btn-primary">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro
-            </a>
-         </div>
-      </div>
-   </div>
-
-
-   <!-- Warning Section Starts -->
-   <!-- Older IE warning message -->
-   <!--[if lt IE 9]>
-      <div class="ie-warning">
-          <h1>Warning!!</h1>
-          <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-          <div class="iew-container">
-              <ul class="iew-download">
-                  <li>
-                      <a href="http://www.google.com/chrome/">
-                          <img src="https://technext.github.io/quantum_able/assets/images/browser/chrome.png" alt="Chrome">
-                          <div>Chrome</div>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.mozilla.org/en-US/firefox/new/">
-                          <img src="https://technext.github.io/quantum_able/assets/images/browser/firefox.png" alt="Firefox">
-                          <div>Firefox</div>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="http://www.opera.com">
-                          <img src="https://technext.github.io/quantum_able/assets/images/browser/opera.png" alt="Opera">
-                          <div>Opera</div>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.apple.com/safari/">
-                          <img src="https://technext.github.io/quantum_able/assets/images/browser/safari.png" alt="Safari">
-                          <div>Safari</div>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                          <img src="https://technext.github.io/quantum_able/assets/images/browser/ie.png" alt="">
-                          <div>IE (9 & above)</div>
-                      </a>
-                  </li>
-              </ul>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
           </div>
-          <p>Sorry for the inconvenience!</p>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <form class="navbar-form">
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button type="submit" class="btn btn-default btn-round btn-just-icon">
+                  <i class="material-icons">search</i>
+                  <div class="ripple-container"></div>
+                </button>
+              </div>
+            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">
+                  <i class="material-icons">dashboard</i>
+                  <p class="d-lg-none d-md-block">
+                    Stats
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="javscript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">notifications</i>
+                  <span class="notification">5</span>
+                  <p class="d-lg-none d-md-block">
+                    Some Actions
+                  </p>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="javascript:void(0)">Mike John responded to your email</a>
+                  <a class="dropdown-item" href="javascript:void(0)">You have 5 new tasks</a>
+                  <a class="dropdown-item" href="javascript:void(0)">You're now friend with Andrew</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Another Notification</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Another One</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">
+                  <i class="material-icons">person</i>
+                  <p class="d-lg-none d-md-block">
+                    Account
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-4 col-lg-12">
+              <div class="card card-chart">
+                <div class="card-header card-header-success">
+                  <div class="ct-chart" id="dailySalesChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Daily Sales</h4>
+                  <p class="card-category">
+                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">access_time</i> updated 4 minutes ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-12">
+              <div class="card card-chart">
+                <div class="card-header card-header-warning">
+                  <div class="ct-chart" id="websiteViewsChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Email Subscriptions</h4>
+                  <p class="card-category">Last Campaign Performance</p>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">access_time</i> campaign sent 2 days ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-12">
+              <div class="card card-chart">
+                <div class="card-header card-header-danger">
+                  <div class="ct-chart" id="completedTasksChart"></div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Completed Tasks</h4>
+                  <p class="card-category">Last Campaign Performance</p>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">access_time</i> campaign sent 2 days ago
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-warning card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">content_copy</i>
+                  </div>
+                  <p class="card-category">Used Space</p>
+                  <h3 class="card-title">49/50
+                    <small>GB</small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons text-warning">warning</i>
+                    <a href="#pablo" class="warning-link">Get More Space...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-success card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">store</i>
+                  </div>
+                  <p class="card-category">Revenue</p>
+                  <h3 class="card-title">$34,245</h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">date_range</i> Last 24 Hours
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-danger card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">info_outline</i>
+                  </div>
+                  <p class="card-category">Fixed Issues</p>
+                  <h3 class="card-title">75</h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">local_offer</i> Tracked from Github
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-info card-header-icon">
+                  <div class="card-icon">
+                    <i class="fa fa-twitter"></i>
+                  </div>
+                  <p class="card-category">Followers</p>
+                  <h3 class="card-title">+245</h3>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">update</i> Just Updated
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Employees Stats</h4>
+                  <p class="card-category">New employees on 15th September, 2016</p>
+                </div>
+                <div class="card-body table-responsive">
+                  <table class="table table-hover">
+                    <thead class="text-warning">
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Salary</th>
+                      <th>Country</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Minerva Hooper</td>
+                        <td>$23,789</td>
+                        <td>Curaçao</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Sage Rodriguez</td>
+                        <td>$56,142</td>
+                        <td>Netherlands</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Philip Chaney</td>
+                        <td>$38,735</td>
+                        <td>Korea, South</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="card">
+                <div class="card-header card-header-tabs card-header-warning">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <span class="nav-tabs-title">Tasks:</span>
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#profile" data-toggle="tab">
+                            <i class="material-icons">bug_report</i> Bugs
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#messages" data-toggle="tab">
+                            <i class="material-icons">code</i> Website
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#settings" data-toggle="tab">
+                            <i class="material-icons">cloud</i> Server
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="profile">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                            </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tab-pane" id="messages">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                            </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="">
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                            </td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" value="" checked>
+                                  <span class="form-check-sign">
+                                    <span class="check"></span>
+                                  </span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="td-actions text-right">
+                              <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button>
+                              <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <![endif]-->
-   <!-- Warning Section Ends -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com">
+                  Creative Tim
+                </a>
+              </li>
+              <li>
+                <a href="https://creative-tim.com/presentation">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="http://blog.creative-tim.com">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="https://www.creative-tim.com/license">
+                  Licenses
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right" id="date">
+            , made with <i class="material-icons">favorite</i> by
+            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer>
+      <script>
+        const x = new Date().getFullYear();
+        let date = document.getElementById('date');
+        date.innerHTML = '&copy; ' + x + date.innerHTML;
+      </script>
+    </div>
+  </div>
+  <div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+      <a href="#" data-toggle="dropdown">
+        <i class="fa fa-cog fa-2x"> </i>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="header-title"> Sidebar Filters</li>
+        <li class="adjustments-line">
+          <a href="javascript:void(0)" class="switch-trigger active-color">
+            <div class="badge-colors ml-auto mr-auto">
+              <span class="badge filter badge-purple active" data-color="purple"></span>
+              <span class="badge filter badge-azure" data-color="azure"></span>
+              <span class="badge filter badge-green" data-color="green"></span>
+              <span class="badge filter badge-warning" data-color="orange"></span>
+              <span class="badge filter badge-danger" data-color="danger"></span>
+            </div>
+            <div class="clearfix"></div>
+          </a>
+        </li>
+        <li class="header-title">Images</li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/img/sidebar-1.jpg" alt="">
+          </a>
+        </li>
+        <li class="active">
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/img/sidebar-2.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/img/sidebar-3.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/img/sidebar-4.jpg" alt="">
+          </a>
+        </li>
+        <li class="button-container">
+          <a href="https://www.creative-tim.com/product/material-dashboard-dark" target="_blank" class="btn btn-primary btn-block">Free Download</a>
+        </li>
+        <!-- <li class="header-title">Want more components?</li>
+            <li class="button-container">
+                <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">
+                  Get the pro version
+                </a>
+            </li> -->
+        <li class="button-container">
+          <a href="https://demos.creative-tim.com/material-dashboard-dark/docs/2.0/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
+            View Documentation
+          </a>
+        </li>
+        <li class="button-container github-star">
+          <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard/tree/dark-edition" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+        </li>
+        <li class="header-title">Thank you for 95 shares!</li>
+        <li class="button-container text-center">
+          <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>
+          <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>
+          <br>
+          <br>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/js/core/jquery.min.js"></script>
+  <script src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/js/core/popper.min.js"></script>
+  <script src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="https://unpkg.com/default-passive-events"></script>
+  <script src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chartist JS -->
+  <script src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/js/material-dashboard.js?v=2.1.0"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="https://demos.creative-tim.com/material-dashboard-dark/examples/dashboard.html/assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      $().ready(function() {
+        $sidebar = $('.sidebar');
 
-   <!-- Required Jqurey -->
-   <script src="https://technext.github.io/quantum_able/assets/plugins/Jquery/dist/jquery.min.js"></script>
-   <script src="https://technext.github.io/quantum_able/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-   <script src="https://technext.github.io/quantum_able/assets/plugins/tether/dist/js/tether.min.js"></script>
+        $sidebar_img_container = $sidebar.find('.sidebar-background');
 
-   <!-- Required Fremwork -->
-   <script src="https://technext.github.io/quantum_able/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        $full_page = $('.full-page');
 
-   <!-- Scrollbar JS-->
-   <script src="https://technext.github.io/quantum_able/assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-   <script src="https://technext.github.io/quantum_able/assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+        $sidebar_responsive = $('body > .navbar-collapse');
 
-   <!--classic JS-->
-   <script src="https://technext.github.io/quantum_able/assets/plugins/classie/classie.js"></script>
+        window_width = $(window).width();
 
-   <!-- notification -->
-   <script src="https://technext.github.io/quantum_able/assets/plugins/notification/js/bootstrap-growl.min.js"></script>
+        $('.fixed-plugin a').click(function(event) {
+          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+          if ($(this).hasClass('switch-trigger')) {
+            if (event.stopPropagation) {
+              event.stopPropagation();
+            } else if (window.event) {
+              window.event.cancelBubble = true;
+            }
+          }
+        });
 
-   <!-- Sparkline charts -->
-   <script src="https://technext.github.io/quantum_able/assets/plugins/jquery-sparkline/dist/jquery.sparkline.js"></script>
+        $('.fixed-plugin .active-color span').click(function() {
+          $full_page_background = $('.full-page-background');
 
-   <!-- Counter js  -->
-   <script src="https://technext.github.io/quantum_able/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
-   <script src="https://technext.github.io/quantum_able/assets/plugins/countdown/js/jquery.counterup.js"></script>
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
 
-   <!-- Echart js -->
-   <script src="https://technext.github.io/quantum_able/assets/plugins/charts/echarts/js/echarts-all.js"></script>
+          var new_color = $(this).data('color');
 
-   <script src="https://code.highcharts.com/highcharts.js"></script>
-   <script src="https://code.highcharts.com/modules/exporting.js"></script>
-   <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-color', new_color);
+          }
 
-   <!-- custom js -->
-   <script type="text/javascript" src="https://technext.github.io/quantum_able/assets/js/main.min.js"></script>
-   <script type="text/javascript" src="https://technext.github.io/quantum_able/assets/pages/dashboard.js"></script>
-   <script type="text/javascript" src="https://technext.github.io/quantum_able/assets/pages/elements.js"></script>
-   <script src="https://technext.github.io/quantum_able/assets/js/menu.min.js"></script>
-<script>
-var $window = $(window);
-var nav = $('.fixed-button');
-$window.scroll(function(){
-    if ($window.scrollTop() >= 200) {
-       nav.addClass('active');
-    }
-    else {
-       nav.removeClass('active');
-    }
-});
-</script>
+          if ($full_page.length != 0) {
+            $full_page.attr('filter-color', new_color);
+          }
 
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.attr('data-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .background-color .badge').click(function() {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('background-color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-background-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .img-holder').click(function() {
+          $full_page_background = $('.full-page-background');
+
+          $(this).parent('li').siblings().removeClass('active');
+          $(this).parent('li').addClass('active');
+
+
+          var new_image = $(this).find("img").attr('src');
+
+          if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            $sidebar_img_container.fadeOut('fast', function() {
+              $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+              $sidebar_img_container.fadeIn('fast');
+            });
+          }
+
+          if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+            $full_page_background.fadeOut('fast', function() {
+              $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+              $full_page_background.fadeIn('fast');
+            });
+          }
+
+          if ($('.switch-sidebar-image input:checked').length == 0) {
+            var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+          }
+        });
+
+        $('.switch-sidebar-image input').change(function() {
+          $full_page_background = $('.full-page-background');
+
+          $input = $(this);
+
+          if ($input.is(':checked')) {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar_img_container.fadeIn('fast');
+              $sidebar.attr('data-image', '#');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page_background.fadeIn('fast');
+              $full_page.attr('data-image', '#');
+            }
+
+            background_image = true;
+          } else {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar.removeAttr('data-image');
+              $sidebar_img_container.fadeOut('fast');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page.removeAttr('data-image', '#');
+              $full_page_background.fadeOut('fast');
+            }
+
+            background_image = false;
+          }
+        });
+
+        $('.switch-sidebar-mini input').change(function() {
+          $body = $('body');
+
+          $input = $(this);
+
+          if (md.misc.sidebar_mini_active == true) {
+            $('body').removeClass('sidebar-mini');
+            md.misc.sidebar_mini_active = false;
+
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+          } else {
+
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+
+            setTimeout(function() {
+              $('body').addClass('sidebar-mini');
+
+              md.misc.sidebar_mini_active = true;
+            }, 300);
+          }
+
+          // we simulate the window Resize so the charts will get updated in realtime.
+          var simulateWindowResize = setInterval(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 180);
+
+          // we stop the simulation of Window Resize after the animations are completed
+          setTimeout(function() {
+            clearInterval(simulateWindowResize);
+          }, 1000);
+
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+    });
+  </script>
 </body>
 
 </html>
