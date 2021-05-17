@@ -1,6 +1,6 @@
 <div align="center">
  
-# Source Codes - Yuda API
+# Source Codes - Yuda APIi
 <p align="center">
 <a href="#"><img title="Yuda API" src="https://img.shields.io/badge/Yuda Api-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
